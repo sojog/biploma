@@ -354,4 +354,79 @@ footer {
     #home p {
         font-size: 0.9em;
     }
+
+    .contact-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f39c12;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: background-color 0.3s, transform 0.3s;
+        /* Smooth transition for background color and transform */
+    }
+
+    .contact-button:hover {
+        background-color: #d87c0a;
+        /* Darken the button color on hover */
+        transform: scale(1.05);
+        /* Slightly scale up the button on hover */
+    }
+
+    /* Hero Section */
+    #home {
+        padding: 10%;
+        background-color: #142335;
+        color: white;
+        text-align: center;
+    }
+
+    #home>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Left side: Image */
+    #home>div>div:first-child {
+        flex: 1;
+        padding: 20px;
+    }
+
+    #home>div>div:first-child img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Right side: Text */
+    #home>div>div:last-child {
+        flex: 1;
+        padding: 20px;
+    }
+
+    #home>div>div:last-child h1 {
+        font-size: 2.5em;
+    }
+
+    #home>div>div:last-child p:first-of-type {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    #home>div>div:last-child p:last-of-type {
+        margin-top: 20px;
+    }
+
+    #home>div>div:last-child a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f39c12;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+
 }
