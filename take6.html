@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Parallax Effect</title>
+    <style>
+      body {
+        height: 3000px;
+        margin: 0; /* Remove default margin */
+        background-image: url("images/background.png");
+      }
+
+      .wrapper {
+        top: 0;
+        left: 0;
+        width: 100vw; /* Viewport width */
+        height: 100vh; /* Viewport height */
+        position: fixed;
+        display: flex; /* Center the image */
+        align-items: center; /* Center the image vertically */
+        justify-content: center; /* Center the image horizontally */
+      }
+
+      .circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: relative; /* Position the images */
+      }
+
+      <!-- .circle img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 950px; /* Set the width of the images */
+        height: 950px; /* Set the height of the images */
+        transform: translate(-50%, -50%); /* Center the images */
+        transform-origin: center; /* Set the rotation point to the center */
+      }
+      -- > #reload1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 950px; /* Set the width of the images */
+        height: 950px; /* Set the height of the images */
+        transform: translate(-50%, -50%); /* Center the images */
+        transform-origin: center; /* Set the rotation point to the center */
+      }
+      #reload2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 750px; /* Set the width of the images */
+        height: 750px; /* Set the height of the images */
+        transform: translate(-50%, -50%); /* Center the images */
+        transform-origin: center; /* Set the rotation point to the center */
+      }
+      #reload3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 950px; /* Set the width of the images */
+        height: 950px; /* Set the height of the images */
+        transform: translate(-50%, -50%); /* Center the images */
+        transform-origin: center; /* Set the rotation point to the center */
+      }
+      #reload4 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px; /* Set the width of the images */
+        height: 500px; /* Set the height of the images */
+        transform: translate(-50%, -50%); /* Center the images */
+        transform-origin: center; /* Set the rotation point to the center */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="circle">
+        <img id="reload1" src="images/dials01.png" alt="scroll" />
+        <img id="reload2" src="images/digits02.png" alt="scroll" />
+        <img id="reload3" src="images/digits03.png" alt="scroll" />
+        <img id="reload4" src="images/badge.png" alt="scroll" />
+      </div>
+    </div>
+    <h1>Simple Parallax Effect</h1>
+    <script>
+      window.onscroll = function () {
+        scrollRotate();
+      };
+
+      function scrollRotate() {
+        let image1 = document.getElementById("reload1");
+        let image2 = document.getElementById("reload2");
+        let image3 = document.getElementById("reload3");
+        let rotation = window.scrollY / 60;
+        image1.style.transform =
+          "translate(-50%, -50%) rotate(" + -rotation + "deg)";
+        image2.style.transform =
+          "translate(-50%, -50%) rotate(" + -rotation * 2 + "deg)";
+        image3.style.transform =
+          "translate(-50%, -50%) rotate(" + rotation * 3 + "deg)";
+      }
+    </script>
+  </body>
+</html>

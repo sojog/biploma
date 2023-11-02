@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557.56 554.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b8e4ed;
+        stroke: #a6ddea;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Dials">
+    <g>
+      <g>
+        <path class="cls-1" d="M278.79,39.83v12.25"/>
+        <path class="cls-1" d="M278.79,502.86v12.25"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M96.74,124.72s7.04,5.9,9.38,7.87"/>
+        <path class="cls-1" d="M451.45,422.35s7.04,5.9,9.38,7.87"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M44.76,318.74s9.04-1.59,12.06-2.13"/>
+        <path class="cls-1" d="M500.76,238.33s9.04-1.59,12.06-2.13"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M159.97,483.27s4.57-7.92,6.1-10.56"/>
+        <path class="cls-1" d="M390.48,84.01s4.57-7.92,6.1-10.56"/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <path class="cls-1" d="M339.53,57.31l-.75,2.73"/>
+        <path class="cls-1" d="M218.8,494.58s-.57,2.05-.75,2.73"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M149.3,89.37l1.61,2.33"/>
+        <path class="cls-1" d="M406.67,462.92s1.21,1.75,1.61,2.33"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M51.58,255.7s2.11,.2,2.82,.27"/>
+        <path class="cls-1" d="M503.17,298.66l2.82,.27"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M116.18,437.47l2.02-1.99"/>
+        <path class="cls-1" d="M439.37,119.14s1.51-1.49,2.02-1.99"/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <path class="cls-1" d="M209.26,59.79s.65,2.02,.86,2.7"/>
+        <path class="cls-1" d="M347.45,491.86l.86,2.7"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M67.57,190.71l2.62,1.07"/>
+        <path class="cls-1" d="M487.38,362.57s1.97,.8,2.62,1.07"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M76.78,383.39l2.51-1.32"/>
+        <path class="cls-1" d="M478.29,172.27s1.88-.99,2.51-1.32"/>
+      </g>
+    </g>
+  </g>
+</svg>
