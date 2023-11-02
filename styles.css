@@ -1,0 +1,74 @@
+body, ul, li, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    transition: color 0.3s, background-color 0.3s; /* Smoothly transition color and background-color changes over 0.3 seconds */
+}
+
+/* On hover, change the text and background colors */
+.menu a:hover {
+    color: #333; /* Change text color on hover */
+    background-color: #ff9800; /* Change background color on hover */
+}
+
+/* Use Flexbox to arrange the sections in pairs */
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+    flex: 1;
+}
+
+/* Add styles for the image section */
+.react-on-hover {
+    position: relative;
+    /* overflow: hidden; */
+    
+}
+
+#image-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    transition: transform 0.3s, filter 0.3s; /* Smoothly transition the transform and filter properties */
+    filter:opacity(50%);
+    width: 45vh;
+}
+
+/* Add a grayscale-to-color effect on hover */
+.react-on-hover:hover .image-container img {
+    transform: scale(1.2); /* Add a scaling effect on hover */
+    filter: grayscale(0%); /* Remove grayscale filter on hover */
+}
