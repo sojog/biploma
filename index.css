@@ -1,7 +1,14 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
 
+/* Color Variables */
 :root {
-    --color: rgb(63 63 63);
+    --color-primary-deep-blue: #003366;
+    --color-secondary-vibrant-teal: #29ABE2;
+    --color-secondary-slate-gray: #f7f8f9;
+    --color-secondary-silver: #b2b1b1;
+    --color-accent-bright-green: #00FF00;
+    --color-accent-gold: #FFD700;
+    --color-navbar-dark: #001F3F;
 }
 
 /* General Reset */
@@ -11,102 +18,130 @@
     box-sizing: border-box;
 }
 
+/* Base Styles */
 body {
-    font-family: Poppins, Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: var(--color-secondary-slate-gray);
     line-height: 1.6;
     margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: #333;
+    color: var(--color-secondary-vibrant-teal);
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: var(--color-navbar-dark);
+    color: var(--color-secondary-silver);
     padding: 15px 0;
     text-align: center;
 }
 
 nav a {
     margin: 0 15px;
-    color: #fff;
+    color: inherit;
+    /* Inherits color from nav */
 }
 
-/* Hero Section */
+.navbar a:hover,
+.navbar .menu-item:hover {
+    background-color: var(--color-primary-deep-blue);
+    color: var(--color-accent-gold);
+}
+
+/* Particle Container Styles */
+#particle-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Hero Section Styles */
 #home {
-    background-color: #333;
-    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secondary-silver);
     text-align: center;
-    padding: 150px 0;
+    z-index: 1;
+    background-color: transparent;
 }
 
-#home h1 {
+/* Hero Text Styles */
+.hero-text {
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    padding: 50px;
+    color: var(--color-secondary-slate-gray);
+}
+
+.hero-text h1 {
     font-size: 2.5em;
 }
 
-#home p {
+.hero-text p {
+    font-size: 1.5em;
     margin-top: 20px;
-    font-size: 1.2em;
 }
 
-#home a {
+/* Contact Button Styles */
+.contact-button {
     display: inline-block;
-    margin-top: 30px;
-    padding: 10px 30px;
-    background-color: #00c853;
-    color: #fff;
+    padding: 10px 20px;
+    background-color: var(--color-accent-gold);
+    color: var(--color-primary-deep-blue);
     border-radius: 5px;
-    transition: background-color 0.3s;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-#home a:hover {
-    background-color: #008c38;
+.contact-button:hover {
+    background-color: var(--color-accent-gold);
+    transform: scale(1.05);
 }
 
-/* Features Section */
-#features {
+/* Sections with Background */
+#features,
+#audience,
+#faq {
     padding: 50px 0;
     text-align: center;
     background-size: cover;
-    background-position: center;
 }
 
-#features h2 {
-    margin-bottom: 30px;
+#audience,
+#faq {
+    background-color: #ebebeb;
+}
+
+/* Section Headings */
+#features h2,
+#features h3,
+#audience h3,
+#faq h3 {
+    margin-bottom: 20px;
     font-size: 2em;
 }
 
-#featureLines {
-    padding: 50px 0;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-}
-
-#features h3 {
+#audience h3,
+#faq h3 {
     font-size: 1.5em;
-    margin-bottom: 20px;
 }
 
-/* Audience Section */
-#audience {
-    background-color: #ebebeb;
-    padding: 50px 0;
-    text-align: center;
-}
-
-#audience div {
-    margin: 20px 0;
-}
-
-#audience h3 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+#separator {
+    padding: 40px;
+    background-color: #142335
 }
 
 /* Contact Section */
@@ -128,34 +163,47 @@ footer {
     text-align: center;
 }
 
-/* Product Details Section */
-#details {
+/* Product Details, Demo, About Us Sections */
+#details,
+#demo,
+#about {
     padding: 50px 0;
     text-align: center;
 }
 
-#details img {
+#details img,
+#about img {
     margin-top: 20px;
     max-width: 100%;
     height: auto;
 }
 
-/* FAQ Section */
-#faq {
-    background-color: #ebebeb;
-    padding: 50px 0;
-    text-align: center;
+#home>div>div:last-child {
+    flex: 1;
+    padding: 20px;
 }
 
-#faq h3 {
+#home>div>div:last-child h1 {
+    font-size: 2.5em;
+}
+
+#home>div>div:last-child p:first-of-type {
     font-size: 1.5em;
-    margin-bottom: 15px;
+    margin-top: 20px;
 }
 
-/* Demo Section */
-#demo {
-    padding: 50px 0;
-    text-align: center;
+#home>div>div:last-child p:last-of-type {
+    margin-top: 20px;
+}
+
+#home>div>div:last-child a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
 }
 
 /* Newsletter Signup */
@@ -171,37 +219,25 @@ footer {
     margin-top: 20px;
 }
 
-#newsletter input[type="email"] {
+#newsletter input[type="email"],
+#newsletter input[type="submit"] {
     padding: 10px 20px;
     border: none;
     margin-right: 10px;
 }
 
 #newsletter input[type="submit"] {
-    padding: 10px 20px;
-    border: none;
-    background-color: #00c853;
+    background-color: var(--color-accent-bright-green);
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 #newsletter input[type="submit"]:hover {
-    background-color: #008c38;
+    background-color: var(--color-secondary-silver);
 }
 
-/* About Us Section */
-#about {
-    padding: 50px 0;
-    text-align: center;
-}
-
-#about img {
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
-}
-
+/* Wrapper and Circle Styles */
 .wrapper {
     top: 0;
     left: 0;
@@ -218,13 +254,14 @@ footer {
     overflow: hidden;
 }
 
-.circle {
+.circleWrapper {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     position: relative;
 }
 
+/* Reload Animation Elements */
 #reload1,
 #reload2,
 #reload3,
@@ -235,7 +272,6 @@ footer {
     transform: translate(-50%, -50%);
     transform-origin: center;
 }
-
 
 #reload1 {
     width: 100%;
@@ -259,12 +295,11 @@ footer {
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-
     .wrapper {
         background-size: 30%;
     }
 
-    #featureLines {
+    #separator {
         display: none;
     }
 
@@ -292,12 +327,9 @@ footer {
         font-size: 2em;
     }
 
-    #home p {
-        font-size: 1em;
-    }
-
+    #home p,
     nav a {
-        margin: 0 10px;
+        font-size: 1em;
     }
 
     #newsletter form {
@@ -315,7 +347,7 @@ footer {
         background-size: 50%;
     }
 
-    #featureLines {
+    #separator {
         display: none;
     }
 
@@ -354,79 +386,4 @@ footer {
     #home p {
         font-size: 0.9em;
     }
-
-    .contact-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #f39c12;
-        color: white;
-        border-radius: 5px;
-        text-decoration: none;
-        margin-top: 20px;
-        transition: background-color 0.3s, transform 0.3s;
-        /* Smooth transition for background color and transform */
-    }
-
-    .contact-button:hover {
-        background-color: #d87c0a;
-        /* Darken the button color on hover */
-        transform: scale(1.05);
-        /* Slightly scale up the button on hover */
-    }
-
-    /* Hero Section */
-    #home {
-        padding: 10%;
-        background-color: #142335;
-        color: white;
-        text-align: center;
-    }
-
-    #home>div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Left side: Image */
-    #home>div>div:first-child {
-        flex: 1;
-        padding: 20px;
-    }
-
-    #home>div>div:first-child img {
-        max-width: 100%;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Right side: Text */
-    #home>div>div:last-child {
-        flex: 1;
-        padding: 20px;
-    }
-
-    #home>div>div:last-child h1 {
-        font-size: 2.5em;
-    }
-
-    #home>div>div:last-child p:first-of-type {
-        font-size: 1.5em;
-        margin-top: 20px;
-    }
-
-    #home>div>div:last-child p:last-of-type {
-        margin-top: 20px;
-    }
-
-    #home>div>div:last-child a {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #f39c12;
-        color: white;
-        border-radius: 5px;
-        text-decoration: none;
-        margin-top: 20px;
-    }
-
 }
