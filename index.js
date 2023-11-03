@@ -10,7 +10,7 @@ function scrollRotate() {
     let image1 = document.getElementById("reload1");
     let image2 = document.getElementById("reload2");
     let image3 = document.getElementById("reload3");
-    let rotation = window.scrollY / 70;
+    let rotation = window.scrollY / 30;
 image1.style.transform =
     "translate(-50%, -50%) rotate(" + -rotation + "deg)";
 image2.style.transform =
@@ -39,7 +39,6 @@ function setup() {
     resizeCanvas(windowWidth, windowHeight); // Resize the canvas when the window is resized
 }
 
-  
 function draw() {
   background(21, 8, 50);
   particles.forEach((p, index) => {
@@ -87,3 +86,17 @@ class Particle {
     });
   }
 }
+
+// JavaScript to toggle the menu
+document.addEventListener('DOMContentLoaded', function () {
+  // Select the elements
+  var toggle = document.querySelector('.navbar-toggle');
+  var menu = document.querySelector('.navbar-links');
+
+  // Add event listener for click
+  toggle.addEventListener('click', function () {
+      // Toggle the active class on both the menu and the hamburger icon
+      menu.classList.toggle('active');
+      toggle.classList.toggle('active');
+  });
+});

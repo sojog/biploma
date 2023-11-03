@@ -19,37 +19,162 @@
 }
 
 /* Base Styles */
-body {
+body,
+html {
     font-family: 'Poppins', Arial, sans-serif;
     background-color: var(--color-secondary-slate-gray);
     line-height: 1.6;
     margin: 0;
+    height: 100%;
 }
 
 a {
     text-decoration: none;
-    color: var(--color-secondary-vibrant-teal);
 }
 
-/* Navigation Bar */
-nav {
+/* Navigation Bar Styles */
+.navbar {
+    color: var(--color-navbar-dark);
+    position: relative;
+    text-align: center;
+    z-index: 5;
+    /* Ensure navbar is below the logo */
+}
+
+/* Logo or Branding */
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+    z-index: 10;
+    /* Higher z-index to ensure logo is above other content */
+    padding: 10px;
+    max-width: 200px;
+    /* Adjust as needed */
+    width: 100%;
+    /* Full width to center the logo */
+}
+
+/* Adjust the image size as needed */
+.navbar-brand img {
+    height: auto;
+    max-height: 100px;
+    /* Adjust as needed */
+    max-width: 100%;
+    /* Ensures the image is not wider than its container */
+    width: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Navigation Links */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 140px;
+    /* Increased padding to push the links down below the logo */
     background-color: var(--color-navbar-dark);
-    color: var(--color-secondary-silver);
-    padding: 15px 0;
+    /* Different variable for navbar links background */
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-secondary-slate-gray);
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar-links li {
+    padding: 0 15px;
     text-align: center;
 }
 
-nav a {
-    margin: 0 15px;
+.navbar-links a {
+    text-decoration: none;
     color: inherit;
-    /* Inherits color from nav */
+    /* Inherits color from parent */
+    display: block;
+    /* Make the anchor fill the li element */
 }
 
-.navbar a:hover,
-.navbar .menu-item:hover {
-    background-color: var(--color-primary-deep-blue);
-    color: var(--color-accent-gold);
+/* Add responsive styles if needed */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        /* or change to flex when active */
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
 }
+
+/* When .active class is toggled on */
+.navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    /* Add styles for mobile menu */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--color-navbar-dark);
+        border-top: 1px solid var(--color-secondary-silver);
+    }
+
+    .navbar-links li {
+        padding: 1rem;
+        border-bottom: 1px solid var(--color-secondary-silver);
+    }
+
+    .navbar-links a {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar-toggle.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* Add a transition for smooth opening/closing of the mobile navbar */
+.navbar-links,
+.navbar-toggle span {
+    transition: all 0.3s ease;
+}
+
 
 /* Particle Container Styles */
 #particle-container {
@@ -112,13 +237,60 @@ nav a {
 }
 
 /* Sections with Background */
-#features,
 #audience,
 #faq {
     padding: 50px 0;
     text-align: center;
     background-size: cover;
+    background-color: var(--color-secondary-slate-gray);
 }
+
+.features-container {
+    padding: 50px 0;
+    text-align: center;
+    background-size: cover;
+    background-color: var(--color-accent-gold);
+}
+
+.feature-div {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* This will make the columns of equal height */
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Optional: Adds space between the columns */
+}
+
+.feature {
+    flex: 1;
+    padding: 50px;
+    text-align: center;
+    background-size: cover;
+    background-color: var(--color-secondary-slate-gray);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature img {
+    max-width: 100px;
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+
+.feature h2,
+.feature h3,
+.features-container h2 {
+    margin: 50px;
+    text-align: center;
+}
+
 
 #audience,
 #faq {
@@ -126,12 +298,12 @@ nav a {
 }
 
 /* Section Headings */
-#features h2,
-#features h3,
 #audience h3,
 #faq h3 {
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 2em;
+    text-align: center;
 }
 
 #audience h3,
@@ -171,8 +343,8 @@ footer {
     text-align: center;
 }
 
-#details img,
-#about img {
+#details,
+#about {
     margin-top: 20px;
     max-width: 100%;
     height: auto;
@@ -340,6 +512,32 @@ footer {
     #newsletter input[type="submit"] {
         margin-top: 10px;
     }
+
+    .features-container {
+        padding: 30px 15px;
+        /* Reduced padding for smaller screens */
+    }
+
+    .feature-div {
+        gap: 10px;
+        /* Reduced gap for smaller screens */
+    }
+
+    .feature {
+        padding: 30px;
+        /* Reduced padding for smaller screens */
+        margin: 5px;
+        /* Reduced margin for smaller screens */
+        /* Ensures that the feature boxes take full width on smaller screens */
+        flex-basis: 100%;
+    }
+
+    .feature h2,
+    .feature h3,
+    .features-container h2 {
+        margin: 20px;
+        /* Reduced margin for smaller screens */
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -371,9 +569,6 @@ footer {
         height: 95%;
     }
 
-    nav {
-        padding: 10px 0;
-    }
 
     #home {
         padding: 100px 0;
@@ -386,4 +581,24 @@ footer {
     #home p {
         font-size: 0.9em;
     }
+
+    .features-container {
+        padding: 20px 10px;
+        /* Further reduced padding for very small screens */
+    }
+
+    .feature {
+        padding: 20px;
+        /* Further reduced padding for very small screens */
+        margin: 5px;
+        /* Reduced margin for very small screens */
+    }
+
+    .feature h2,
+    .feature h3,
+    .features-container h2 {
+        margin: 15px;
+        /* Further reduced margin for very small screens */
+    }
+
 }

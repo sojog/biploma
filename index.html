@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="keywords"
-      content="blockchain, diploma, certificate, technology, verified"
+      content="blockchain, diploma, certificate, technology, verified, certiblock"
     />
-    <title>Blockchain Certified Diplomas - index</title>
+    <title>Certiblock - Blockchain Certified Diplomas - index</title>
     <link href="index.css" type="text/css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   </head>
 
   <body>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- Logo or Branding -->
+
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo.svg" alt="Your Company Logo" />
+        </a>
+        <!-- Navigation Links -->
+        <ul class="navbar-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="system-overview.html">SYSTEM OVERVIEW</a></li>
+          <li><a href="products.html">PRODUCTS</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section with Particle Background -->
@@ -51,28 +71,14 @@
     <section id="separator"></section>
 
     <!-- Features Section -->
-    <section id="features" style="padding: 40px; background-color: #f4f4f4">
-      <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 40px">
-        Why Choose Our Solution?
-      </h2>
+    <div class="features-container">
+      <h2>Why Choose Our Solution?</h2>
 
-      <div
-        style="
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap;
-        "
-      >
+      <div class="feature-div">
         <!-- Feature 1: Immutable Records -->
-        <div
-          style="flex: 1; padding: 20px; max-width: 300px; text-align: center"
-        >
-          <img
-            src="images/v3.png"
-            alt="Immutable Icon"
-            style="width: 100px; margin-bottom: 20px"
-          />
+
+        <div class="feature">
+          <img src="images/v3.png" alt="Immutable Icon" />
           <h3>Immutable Records</h3>
           <p>
             Once a certificate is added to the blockchain, it can't be tampered
@@ -82,14 +88,8 @@
         </div>
 
         <!-- Feature 2: Global Verification -->
-        <div
-          style="flex: 1; padding: 20px; max-width: 300px; text-align: center"
-        >
-          <img
-            src="images/v2.png"
-            alt="Verification Icon"
-            style="width: 100px; margin-bottom: 20px"
-          />
+        <div class="feature">
+          <img src="images/v1.png" alt="Verification Icon" />
           <h3>Global Verification</h3>
           <p>
             Our blockchain solution allows for instant global verification of
@@ -98,22 +98,16 @@
         </div>
 
         <!-- Feature 3: Eco-Friendly -->
-        <div
-          style="flex: 1; padding: 20px; max-width: 300px; text-align: center"
-        >
-          <img
-            src="images/v4.png"
-            alt="Eco Friendly Icon"
-            style="width: 100px; margin-bottom: 20px"
-          />
-          <h3>Eco-Friendly</h3>
+        <div class="feature">
+          <img src="images/v5.png" alt="Eco Friendly Icon" />
+          <h3>Eco-Friendly Space</h3>
           <p>
             By digitizing diplomas on the blockchain, we reduce the need for
             paper-based certificates, contributing to a greener planet.
           </p>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Features Section -->
     <section id="features" style="background-color: aqua; padding: 5%">
@@ -138,5 +132,8 @@
       </div>
     </section>
     <script src="index.js"></script>
+    <footer>
+      <p>&copy; 2023 Blockchain Certificates</p>
+    </footer>
   </body>
 </html>

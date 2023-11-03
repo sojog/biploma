@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.31 45.59">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #f7f8f9;
+      }
+
+      .cls-2 {
+        font-size: 37px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: Georgia, Georgia;
+      }
+
+      .cls-3 {
+        font-size: 11px;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(0 34.37)"><tspan x="0" y="0">Certiblock</tspan></text>
+  <text class="cls-3" transform="translate(165.49 13.36)"><tspan x="0" y="0">™</tspan></text>
+  <path class="cls-1" d="M170.74,0c-4.18,0-7.58,3.39-7.58,7.58s3.39,7.58,7.58,7.58,7.58-3.39,7.58-7.58-3.39-7.58-7.58-7.58Zm0,13.27c-3.15,0-5.7-2.55-5.7-5.7s2.55-5.7,5.7-5.7,5.7,2.55,5.7,5.7-2.55,5.7-5.7,5.7Z"/>
+</svg>
