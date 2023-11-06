@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 114.66 114.13">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#outer-glow-1);
+      }
+
+      .cls-1, .cls-2 {
+        fill: #152235;
+      }
+
+      .cls-3 {
+        font-size: 4.47px;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #a6ddea;
+      }
+
+      .cls-3, .cls-5 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+      }
+
+      .cls-6 {
+        fill: #f3f3f3;
+      }
+
+      .cls-7 {
+        fill: #f3f2f3;
+      }
+
+      .cls-8 {
+        fill: #f2f2f2;
+      }
+
+      .cls-9 {
+        fill: #676161;
+      }
+
+      .cls-10 {
+        fill: #676261;
+      }
+
+      .cls-11 {
+        fill: #666160;
+      }
+
+      .cls-12 {
+        fill: #6a6565;
+      }
+
+      .cls-13 {
+        fill: #6a6564;
+      }
+
+      .cls-14 {
+        fill: #ebebeb;
+      }
+
+      .cls-15 {
+        fill: #ebeaea;
+      }
+
+      .cls-16 {
+        fill: #fcfdfd;
+      }
+
+      .cls-17 {
+        fill: #e6e4e4;
+      }
+
+      .cls-18 {
+        fill: #fff;
+      }
+
+      .cls-19 {
+        fill: #ecebeb;
+      }
+
+      .cls-20 {
+        fill: #e5e4e4;
+      }
+
+      .cls-21 {
+        fill: #e5e3e3;
+      }
+
+      .cls-22 {
+        fill: #e4e3e3;
+      }
+
+      .cls-23 {
+        fill: #fed700;
+      }
+
+      .cls-24 {
+        fill: #fdfeff;
+      }
+
+      .cls-25 {
+        fill: #6b6565;
+      }
+
+      .cls-26 {
+        fill: #746e6e;
+      }
+
+      .cls-27 {
+        fill: #686363;
+      }
+
+      .cls-28 {
+        fill: #655f5f;
+      }
+
+      .cls-29 {
+        fill: #999595;
+      }
+
+      .cls-30 {
+        fill: #7e7878;
+      }
+
+      .cls-31 {
+        fill: #7e7978;
+      }
+
+      .cls-32 {
+        fill: #7e7979;
+      }
+
+      .cls-33 {
+        fill: #989393;
+      }
+
+      .cls-34 {
+        fill: #979292;
+      }
+
+      .cls-35 {
+        fill: #6c6766;
+      }
+
+      .cls-36 {
+        fill: #928d8d;
+      }
+
+      .cls-37 {
+        fill: #9f9b9b;
+      }
+
+      .cls-38 {
+        fill: #9fbfdc;
+      }
+
+      .cls-39 {
+        fill: #a09b9b;
+      }
+
+      .cls-40 {
+        fill: #938f8f;
+      }
+
+      .cls-41 {
+        fill: #857f7f;
+      }
+
+      .cls-42 {
+        fill: #c1bebe;
+      }
+
+      .cls-43 {
+        fill: #b4b0b0;
+      }
+
+      .cls-44 {
+        fill: #8a8585;
+      }
+
+      .cls-45 {
+        fill: #b7b3b3;
+      }
+
+      .cls-46 {
+        fill: #b8b4b4;
+      }
+
+      .cls-47 {
+        fill: #9d9898;
+      }
+
+      .cls-48 {
+        fill: #8b8685;
+      }
+
+      .cls-49 {
+        fill: #9e9a99;
+      }
+
+      .cls-50 {
+        fill: #a19d9c;
+      }
+
+      .cls-51 {
+        fill: #b9b6b6;
+      }
+
+      .cls-52 {
+        fill: #c2bfbf;
+      }
+
+      .cls-53 {
+        fill: #b3afaf;
+      }
+
+      .cls-54 {
+        fill: #8f8a8a;
+      }
+
+      .cls-55 {
+        fill: #908b8b;
+      }
+
+      .cls-56 {
+        fill: #b6b3b3;
+      }
+
+      .cls-57 {
+        fill: #332f2f;
+      }
+
+      .cls-58 {
+        fill: #302d2c;
+      }
+
+      .cls-59 {
+        fill: #8e8989;
+      }
+
+      .cls-60 {
+        fill: #8d8888;
+      }
+
+      .cls-61 {
+        fill: #8c8686;
+      }
+
+      .cls-62 {
+        fill: #b7c8cf;
+      }
+
+      .cls-63 {
+        fill: #cecccc;
+      }
+
+      .cls-64 {
+        fill: #cdcaca;
+      }
+
+      .cls-65 {
+        fill: #cdcbcb;
+      }
+
+      .cls-66 {
+        fill: #a9a5a5;
+      }
+
+      .cls-67 {
+        fill: #b2aeae;
+      }
+
+      .cls-68 {
+        fill: #aaa6a6;
+      }
+
+      .cls-69 {
+        fill: #bbb8b8;
+      }
+
+      .cls-70 {
+        fill: #aeaaaa;
+      }
+
+      .cls-71 {
+        fill: #d8d6d6;
+      }
+
+      .cls-72 {
+        fill: #a49f9f;
+      }
+
+      .cls-73 {
+        fill: #a4a0a0;
+      }
+
+      .cls-74 {
+        fill: #afabab;
+      }
+
+      .cls-75 {
+        fill: #bcb9b9;
+      }
+
+      .cls-76 {
+        fill: #a6a1a1;
+      }
+
+      .cls-77 {
+        fill: #c0bdbd;
+      }
+
+      .cls-78 {
+        fill: #bdbaba;
+      }
+
+      .cls-79 {
+        fill: #a9cace;
+      }
+
+      .cls-80 {
+        fill: #bebbbb;
+      }
+
+      .cls-81 {
+        fill: #cac8c8;
+      }
+
+      .cls-82 {
+        fill: #c9c6c6;
+      }
+
+      .cls-83 {
+        fill: #d0cdcd;
+      }
+
+      .cls-84 {
+        fill: #dedcdc;
+      }
+
+      .cls-85 {
+        fill: #d2d0d0;
+      }
+
+      .cls-86 {
+        fill: #c3c0c0;
+      }
+
+      .cls-87 {
+        fill: #d4d2d1;
+      }
+
+      .cls-88 {
+        fill: #d3d1d1;
+      }
+
+      .cls-89 {
+        fill: #dad8d8;
+      }
+
+      .cls-90 {
+        fill: #d9d7d7;
+      }
+
+      .cls-91 {
+        fill: #e0dede;
+      }
+
+      .cls-92 {
+        fill: #ada9a9;
+      }
+
+      .cls-93 {
+        fill: #c5c2c2;
+      }
+
+      .cls-94 {
+        fill: #c8c5c5;
+      }
+
+      .cls-95 {
+        fill: #c7c4c4;
+      }
+
+      .cls-96 {
+        fill: #dfdddd;
+      }
+
+      .cls-97 {
+        fill: #d5d3d3;
+      }
+
+      .cls-98 {
+        fill: #a8a3a3;
+      }
+
+      .cls-99 {
+        fill: #a8a4a4;
+      }
+
+      .cls-100 {
+        fill: #252222;
+      }
+
+      .cls-101 {
+        fill: #221f1f;
+      }
+
+      .cls-102 {
+        fill: #433f3e;
+      }
+
+      .cls-103 {
+        fill: #433e3e;
+      }
+
+      .cls-104 {
+        fill: #403b3b;
+      }
+
+      .cls-105 {
+        fill: #403c3b;
+      }
+
+      .cls-106 {
+        fill: #413c3c;
+      }
+
+      .cls-107 {
+        fill: #413d3c;
+      }
+
+      .cls-108 {
+        fill: #142335;
+      }
+
+      .cls-109 {
+        fill: #1d3260;
+      }
+
+      .cls-110 {
+        fill: #363232;
+      }
+
+      .cls-111 {
+        fill: #373333;
+      }
+
+      .cls-112 {
+        fill: #373332;
+      }
+
+      .cls-113 {
+        fill: #443f3f;
+      }
+
+      .cls-114 {
+        fill: #44403f;
+      }
+
+      .cls-115 {
+        fill: #191d33;
+      }
+
+      .cls-116 {
+        fill: #3e3939;
+      }
+
+      .cls-117 {
+        fill: #3f3a3a;
+      }
+
+      .cls-118 {
+        fill: #0d1928;
+      }
+
+      .cls-119 {
+        fill: #a39e9e;
+      }
+
+      .cls-120 {
+        fill: #807b7b;
+      }
+
+      .cls-121 {
+        fill: #6e6969;
+      }
+
+      .cls-122 {
+        fill: #6e6968;
+      }
+
+      .cls-123 {
+        fill: #6e6868;
+      }
+
+      .cls-124 {
+        fill: #959090;
+      }
+
+      .cls-125 {
+        fill: #726c6c;
+      }
+
+      .cls-126 {
+        fill: #969292;
+      }
+
+      .cls-127 {
+        fill: #464140;
+      }
+
+      .cls-128 {
+        fill: #544f4f;
+      }
+
+      .cls-129 {
+        fill: #464241;
+      }
+
+      .cls-130 {
+        fill: #534e4e;
+      }
+
+      .cls-131 {
+        fill: #898484;
+      }
+
+      .cls-132 {
+        fill: #868181;
+      }
+
+      .cls-133 {
+        fill: #868080;
+      }
+
+      .cls-134 {
+        fill: #87d3e0;
+      }
+
+      .cls-135 {
+        fill: #878282;
+      }
+
+      .cls-136 {
+        fill: #9b9696;
+      }
+
+      .cls-137 {
+        fill: #706b6a;
+      }
+
+      .cls-138 {
+        fill: #555050;
+      }
+
+      .cls-139 {
+        fill: #635e5d;
+      }
+
+      .cls-140 {
+        fill: #5c5756;
+      }
+
+      .cls-141 {
+        fill: #5b5655;
+      }
+
+      .cls-142 {
+        fill: #595353;
+      }
+
+      .cls-143 {
+        fill: #2b2828;
+      }
+
+      .cls-144 {
+        fill: #2b2727;
+      }
+
+      .cls-145 {
+        fill: #645e5e;
+      }
+
+      .cls-146 {
+        fill: #4a4545;
+      }
+
+      .cls-147 {
+        fill: #474242;
+      }
+
+      .cls-148 {
+        fill: #2d2a2a;
+      }
+
+      .cls-149 {
+        fill: #383333;
+      }
+
+      .cls-150 {
+        fill: #312d2d;
+      }
+
+      .cls-151 {
+        fill: #3a3636;
+      }
+
+      .cls-152 {
+        fill: #3a3535;
+      }
+
+      .cls-153 {
+        fill: #3b3636;
+      }
+
+      .cls-154 {
+        fill: #343030;
+      }
+
+      .cls-155 {
+        fill: #3d3938;
+      }
+
+      .cls-156 {
+        fill: #2e2a2a;
+      }
+
+      .cls-157 {
+        fill: #2e2b2a;
+      }
+
+      .cls-158 {
+        fill: #2e2b2b;
+      }
+
+      .cls-159 {
+        fill: #3d3838;
+      }
+
+      .cls-160 {
+        fill: #5a5454;
+      }
+
+      .cls-161 {
+        fill: #5a5554;
+      }
+
+      .cls-162 {
+        fill: #393534;
+      }
+
+      .cls-163 {
+        fill: #585252;
+      }
+
+      .cls-164 {
+        fill: #575151;
+      }
+
+      .cls-165 {
+        fill: #3c3737;
+      }
+
+      .cls-166 {
+        fill: #827d7d;
+      }
+
+      .cls-167 {
+        fill: #4c4746;
+      }
+
+      .cls-168 {
+        fill: #5f5959;
+      }
+
+      .cls-169 {
+        fill: #494443;
+      }
+
+      .cls-170 {
+        fill: #494544;
+      }
+
+      .cls-171 {
+        fill: #605b5b;
+      }
+
+      .cls-172 {
+        fill: #605a5a;
+      }
+
+      .cls-173 {
+        fill: #767070;
+      }
+
+      .cls-174 {
+        fill: #625d5d;
+      }
+
+      .cls-175 {
+        fill: #5d5857;
+      }
+
+      .cls-176 {
+        fill: #7a7574;
+      }
+
+      .cls-177 {
+        fill: #7a7474;
+      }
+
+      .cls-178 {
+        fill: #5e5858;
+      }
+
+      .cls-179 {
+        fill: #615c5b;
+      }
+
+      .cls-180 {
+        fill: #726d6c;
+      }
+
+      .cls-181 {
+        fill: #524d4d;
+      }
+
+      .cls-182 {
+        fill: #787372;
+      }
+
+      .cls-183 {
+        fill: #837d7d;
+      }
+
+      .cls-184 {
+        fill: #504b4a;
+      }
+
+      .cls-185 {
+        fill: #504b4b;
+      }
+
+      .cls-186 {
+        fill: #4f4a49;
+      }
+
+      .cls-187 {
+        fill: #827c7c;
+      }
+
+      .cls-188 {
+        fill: #7c7776;
+      }
+
+      .cls-189 {
+        fill: #312e2e;
+      }
+
+      .cls-190 {
+        fill: #282525;
+      }
+
+      .cls-191 {
+        fill: #514c4b;
+      }
+
+      .cls-192 {
+        fill: #4d4847;
+      }
+
+      .cls-193 {
+        fill: #4d4848;
+      }
+
+      .cls-194 {
+        fill: #4d4948;
+      }
+
+      .cls-195 {
+        fill: #6d7e9e;
+        stroke-width: 2px;
+      }
+
+      .cls-195, .cls-196, .cls-197, .cls-198 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-195, .cls-197 {
+        stroke: #a6ddea;
+      }
+
+      .cls-5 {
+        font-size: 5.27px;
+      }
+
+      .cls-199 {
+        fill: url(#radial-gradient-10);
+      }
+
+      .cls-200 {
+        fill: url(#radial-gradient-11);
+      }
+
+      .cls-201 {
+        fill: url(#radial-gradient-12);
+      }
+
+      .cls-202 {
+        fill: url(#radial-gradient-13);
+      }
+
+      .cls-203 {
+        fill: url(#radial-gradient-6);
+      }
+
+      .cls-204 {
+        fill: url(#radial-gradient-5);
+      }
+
+      .cls-205 {
+        fill: url(#radial-gradient-3);
+      }
+
+      .cls-206 {
+        fill: url(#radial-gradient-4);
+      }
+
+      .cls-207 {
+        fill: url(#radial-gradient-9);
+      }
+
+      .cls-208 {
+        fill: url(#radial-gradient-8);
+      }
+
+      .cls-209 {
+        fill: url(#radial-gradient-7);
+      }
+
+      .cls-210 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-196 {
+        fill: url(#radial-gradient-14);
+        stroke: #fff;
+      }
+
+      .cls-197 {
+        fill: #b8e4ed;
+      }
+
+      .cls-198 {
+        fill: #fffffd;
+        stroke: #000;
+      }
+
+      .cls-211 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-212 {
+        filter: url(#outer-glow-2);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="54.71" cy="56.28" fx="54.71" fy="56.28" r="12.2" gradientTransform="translate(3.79 1.38) scale(.98 .99)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4d698d"/>
+      <stop offset="1" stop-color="#a6ddea"/>
+      <stop offset="1" stop-color="#010101"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="54.71" cy="56.28" fx="54.71" fy="56.28" r="14.72" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-3" r="13.46" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-4" cx="54.71" fx="54.71" r="15.98" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-5" cx="54.71" fx="54.71" r="17.24" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-6" cx="54.71" fx="54.71" r="18.5" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-7" cx="54.71" fx="54.71" r="19.76" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-8" cx="54.71" cy="56.28" fx="54.71" fy="56.28" r="21.01" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-9" cx="54.71" cy="56.28" fx="54.71" fy="56.28" r="22.27" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-10" cx="54.71" cy="56.28" fx="54.71" fy="56.28" r="23.53" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-11" cx="54.71" cy="56.28" fx="54.71" fy="56.28" r="24.79" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-12" cx="54.71" fx="54.71" r="26.05" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-13" r="27.31" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-14" cx="54.71" fx="54.71" r="28.57" xlink:href="#radial-gradient"/>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="3"/>
+      <feFlood flood-color="#f3f4f2" flood-opacity=".7"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="outer-glow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="5"/>
+      <feFlood flood-color="#010101" flood-opacity=".75"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect class="cls-108" x="7.33" y="7.08" width="99.85" height="99.85"/>
+  <g>
+    <path class="cls-211" d="M57.33,69.16c-6.58,0-11.94-5.42-11.94-12.07s5.36-12.07,11.94-12.07,11.94,5.42,11.94,12.07-5.36,12.07-11.94,12.07Zm0-23.68c-6.33,0-11.48,5.21-11.48,11.61s5.15,11.61,11.48,11.61,11.48-5.21,11.48-11.61-5.15-11.61-11.48-11.61Z"/>
+    <path class="cls-210" d="M57.33,71.65c-7.94,0-14.4-6.54-14.4-14.57s6.46-14.57,14.4-14.57,14.4,6.53,14.4,14.57-6.46,14.57-14.4,14.57Zm0-28.67c-7.69,0-13.94,6.33-13.94,14.1s6.25,14.1,13.94,14.1,13.94-6.33,13.94-14.1-6.25-14.1-13.94-14.1Z"/>
+    <path class="cls-205" d="M57.33,70.4c-7.26,0-13.17-5.98-13.17-13.32s5.91-13.32,13.17-13.32,13.17,5.98,13.17,13.32-5.91,13.32-13.17,13.32Zm0-26.17c-7.01,0-12.71,5.77-12.71,12.85s5.7,12.85,12.71,12.85,12.71-5.77,12.71-12.85-5.7-12.85-12.71-12.85Z"/>
+    <path class="cls-206" d="M57.33,72.9c-8.62,0-15.64-7.09-15.64-15.81s7.01-15.81,15.64-15.81,15.64,7.09,15.64,15.81-7.01,15.81-15.64,15.81Zm0-31.16c-8.37,0-15.17,6.88-15.17,15.35s6.81,15.35,15.17,15.35,15.17-6.88,15.17-15.35-6.81-15.35-15.17-15.35Z"/>
+    <path class="cls-204" d="M57.33,74.14c-9.3,0-16.87-7.65-16.87-17.06s7.57-17.06,16.87-17.06,16.87,7.65,16.87,17.06-7.57,17.06-16.87,17.06Zm0-33.65c-9.05,0-16.41,7.44-16.41,16.59s7.36,16.59,16.41,16.59,16.41-7.44,16.41-16.59-7.36-16.59-16.41-16.59Z"/>
+    <path class="cls-203" d="M57.33,75.39c-9.98,0-18.1-8.21-18.1-18.31s8.12-18.31,18.1-18.31,18.1,8.21,18.1,18.31-8.12,18.31-18.1,18.31Zm0-36.15c-9.73,0-17.64,8-17.64,17.84s7.91,17.84,17.64,17.84,17.64-8,17.64-17.84-7.91-17.84-17.64-17.84Z"/>
+    <path class="cls-209" d="M57.33,76.64c-10.66,0-19.33-8.77-19.33-19.55s8.67-19.55,19.33-19.55,19.33,8.77,19.33,19.55-8.67,19.55-19.33,19.55Zm0-38.64c-10.41,0-18.87,8.56-18.87,19.09s8.47,19.09,18.87,19.09,18.87-8.56,18.87-19.09-8.47-19.09-18.87-19.09Z"/>
+    <path class="cls-208" d="M57.33,77.88c-11.34,0-20.57-9.33-20.57-20.8s9.23-20.8,20.57-20.8,20.57,9.33,20.57,20.8-9.23,20.8-20.57,20.8Zm0-41.13c-11.09,0-20.1,9.12-20.1,20.33s9.02,20.33,20.1,20.33,20.1-9.12,20.1-20.33-9.02-20.33-20.1-20.33Z"/>
+    <path class="cls-207" d="M57.33,79.13c-12.02,0-21.8-9.89-21.8-22.05s9.78-22.05,21.8-22.05,21.8,9.89,21.8,22.05-9.78,22.05-21.8,22.05Zm0-43.62c-11.77,0-21.34,9.68-21.34,21.58s9.57,21.58,21.34,21.58,21.34-9.68,21.34-21.58-9.57-21.58-21.34-21.58Z"/>
+    <path class="cls-199" d="M57.33,80.37c-12.7,0-23.03-10.45-23.03-23.29s10.33-23.29,23.03-23.29,23.03,10.45,23.03,23.29-10.33,23.29-23.03,23.29Zm0-46.12c-12.44,0-22.57,10.24-22.57,22.83s10.12,22.83,22.57,22.83,22.57-10.24,22.57-22.83-10.12-22.83-22.57-22.83Z"/>
+    <path class="cls-200" d="M57.33,81.62c-13.38,0-24.26-11.01-24.26-24.54s10.88-24.54,24.26-24.54,24.26,11.01,24.26,24.54-10.88,24.54-24.26,24.54Zm0-48.61c-13.12,0-23.8,10.8-23.8,24.07s10.68,24.07,23.8,24.07,23.8-10.8,23.8-24.07-10.68-24.07-23.8-24.07Z"/>
+    <path class="cls-201" d="M57.33,82.87c-14.06,0-25.5-11.57-25.5-25.79s11.44-25.79,25.5-25.79,25.5,11.57,25.5,25.79-11.44,25.79-25.5,25.79Zm0-51.1c-13.8,0-25.03,11.36-25.03,25.32s11.23,25.32,25.03,25.32,25.03-11.36,25.03-25.32-11.23-25.32-25.03-25.32Z"/>
+    <path class="cls-202" d="M57.33,84.11c-14.74,0-26.73-12.13-26.73-27.03s11.99-27.03,26.73-27.03,26.73,12.13,26.73,27.03-11.99,27.03-26.73,27.03Zm0-53.6c-14.48,0-26.27,11.92-26.27,26.56s11.78,26.56,26.27,26.56,26.27-11.92,26.27-26.56-11.78-26.56-26.27-26.56Z"/>
+    <path class="cls-196" d="M57.33,85.36c-15.42,0-27.96-12.69-27.96-28.28s12.54-28.28,27.96-28.28,27.96,12.69,27.96,28.28-12.54,28.28-27.96,28.28Zm0-56.09c-15.16,0-27.5,12.48-27.5,27.81s12.34,27.81,27.5,27.81,27.5-12.48,27.5-27.81-12.34-27.81-27.5-27.81Z"/>
+  </g>
+  <path class="cls-62" d="M57.33,25.29c-17.23,0-31.2,14.23-31.2,31.79s13.97,31.79,31.2,31.79,31.2-14.23,31.2-31.79-13.97-31.79-31.2-31.79Zm0,60.29c-15.42,0-27.97-12.78-27.97-28.49s12.55-28.49,27.97-28.49,27.97,12.78,27.97,28.49-12.55,28.49-27.97,28.49Z"/>
+  <g>
+    <path class="cls-62" d="M75.24,84.64H38.93l-.87-.87V33.18l.87-.87h36.31l.87,.87v50.58l-.87,.87Z"/>
+    <path class="cls-18" d="M74.05,84.03H40.11l-.87-.87V34.4l.87-.87h33.93l.87,.87v48.76l-.87,.87Z"/>
+    <path class="cls-198" d="M69.79,34.68h-25.42c0,2.38-1.93,4.31-4.31,4.31v39.57c2.38,0,4.31,1.93,4.31,4.31h25.42c0-2.38,1.93-4.31,4.31-4.31V39c-2.38,0-4.31-1.93-4.31-4.31Zm3.38,42.56c-2.38,0-4.31,1.93-4.31,4.31h-23.54c0-2.38-1.93-4.31-4.31-4.31V40.32c2.38,0,4.31-1.93,4.31-4.31h23.54c0,2.38,1.93,4.31,4.31,4.31v36.91Z"/>
+    <path class="cls-195" d="M45.87,42.58s16.82,0,22.42,0"/>
+    <path class="cls-195" d="M45.87,40.06s16.82,0,22.42,0"/>
+    <path class="cls-195" d="M45.87,45.1s16.82,0,22.42,0"/>
+    <path class="cls-195" d="M45.87,47.62s16.82,0,22.42,0"/>
+    <path class="cls-195" d="M45.87,50.14h22.42"/>
+  </g>
+  <g>
+    <path class="cls-4" d="M57.33,23.72c-17.77,0-32.23,14.97-32.23,33.37s14.46,33.37,32.23,33.37,32.23-14.97,32.23-33.37-14.46-33.37-32.23-33.37Zm0,66.46c-17.63,0-31.97-14.85-31.97-33.1s14.34-33.1,31.97-33.1,31.97,14.85,31.97,33.1-14.34,33.1-31.97,33.1Z"/>
+    <path class="cls-4" d="M57.33,18.41c-21.32,0-38.67,17.35-38.67,38.67s17.35,38.67,38.67,38.67,38.67-17.35,38.67-38.67S78.65,18.41,57.33,18.41Zm0,77.03c-21.15,0-38.36-17.21-38.36-38.36S36.18,18.72,57.33,18.72s38.36,17.21,38.36,38.36-17.21,38.36-38.36,38.36Z"/>
+    <path class="cls-4" d="M57.33,11.15C32,11.15,11.39,31.75,11.39,57.08s20.61,45.93,45.93,45.93,45.93-20.61,45.93-45.93S82.65,11.15,57.33,11.15Zm0,91.5c-25.12,0-45.56-20.44-45.56-45.56S32.2,11.52,57.33,11.52s45.56,20.44,45.56,45.56-20.44,45.56-45.56,45.56Z"/>
+    <text id="Outter" class="cls-5" transform="translate(80.22 89.97) rotate(147.47) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(77.96 91.42) rotate(151.25) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(75.61 92.71) rotate(155) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(73.17 93.84) rotate(158.72) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(70.68 94.82) rotate(162.4) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(68.1 95.64) rotate(166.15) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(65.51 96.28) rotate(169.9) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(62.87 96.75) rotate(173.67) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(60.2 97.05) rotate(177.47) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(57.52 97.17) rotate(-178.72) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(54.84 97.11) rotate(-174.93) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(52.19 96.88) rotate(-171.17) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(49.51 96.46) rotate(-167.35) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(46.91 95.88) rotate(-163.58) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(44.32 95.12) rotate(-159.78) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(41.83 94.2) rotate(-156.03) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(39.37 93.11) rotate(-152.22) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(37 91.86) rotate(-148.41) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(34.71 90.45) rotate(-144.58) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(32.54 88.91) rotate(-140.77) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(30.44 87.21) rotate(-136.88) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(28.49 85.38) rotate(-133) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(26.67 83.43) rotate(-129.14) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(24.97 81.35) rotate(-125.24) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(23.43 79.17) rotate(-121.36) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(22.02 76.87) rotate(-117.44) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(20.79 74.5) rotate(-113.6) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(19.71 72.06) rotate(-109) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(18.81 69.52) rotate(-105.95) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(18.07 66.96) rotate(-102.11) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(17.51 64.32) rotate(-98.2) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(17.12 61.68) rotate(-94.32) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(16.92 59.01) rotate(-90.42) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(16.9 56.31) rotate(-86.52) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(17.06 53.64) rotate(-82.64) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(17.4 50.99) rotate(-78.8) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(17.92 48.35) rotate(-74.95) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(18.62 45.76) rotate(-71.12) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(19.47 43.24) rotate(-67.35) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(20.51 40.76) rotate(-63.55) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(21.7 38.35) rotate(-59.75) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(23.04 36.05) rotate(-55.99) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(24.55 33.81) rotate(-52.18) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(26.2 31.69) rotate(-48.4) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(27.98 29.68) rotate(-44.59) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(29.89 27.8) rotate(-40.8) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(31.9 26.06) rotate(-37.03) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(34.04 24.44) rotate(-33.24) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(36.28 22.97) rotate(-29.47) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(38.61 21.65) rotate(-25.72) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(41.05 20.48) rotate(-21.95) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(43.53 19.47) rotate(-18.28) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(46.08 18.63) rotate(-14.56) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(48.67 17.96) rotate(-10.81) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(51.31 17.45) rotate(-7.03) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(53.97 17.12) rotate(-3.24) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(56.64 16.97) rotate(.53) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(59.31 16.99) rotate(4.33) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(62 17.19) rotate(8.14) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(64.65 17.57) rotate(11.92) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(67.27 18.12) rotate(15.69) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(69.86 18.85) rotate(19.49) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(72.37 19.73) rotate(23.25) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(74.84 20.79) rotate(27.05) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(77.23 22.01) rotate(30.86) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(79.54 23.39) rotate(34.69) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(81.73 24.9) rotate(38.5) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(83.84 26.58) rotate(42.37) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(85.82 28.38) rotate(46.24) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(87.66 30.3) rotate(50.1) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(89.4 32.38) rotate(54.04) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(90.97 34.54) rotate(57.92) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(92.4 36.82) rotate(61.83) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(93.66 39.16) rotate(65.66) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(94.76 41.62) rotate(69.13) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(95.71 44.12) rotate(73.32) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(96.48 46.68) rotate(77.16) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(97.08 49.31) rotate(81.07) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(97.5 51.96) rotate(84.96) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(97.73 54.63) rotate(88.86) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(97.79 57.29) rotate(92.73) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(97.66 59.97) rotate(96.61) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(97.35 62.62) rotate(100.46) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(96.87 65.27) rotate(104.32) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(96.2 67.88) rotate(108.15) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(95.38 70.4) rotate(111.92) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(94.38 72.9) rotate(115.72) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(93.21 75.32) rotate(119.52) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(91.89 77.66) rotate(123.32) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(90.42 79.89) rotate(127.09) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(88.81 82.03) rotate(130.87) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(87.05 84.06) rotate(134.67) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-5" transform="translate(85.17 85.97) rotate(138.45) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-5" transform="translate(83.16 87.75) rotate(142.26) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text id="Inner" class="cls-3" transform="translate(30.34 77.75) rotate(-125.2) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(29.03 75.89) rotate(-121.41) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(27.85 73.97) rotate(-117.71) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(26.79 71.95) rotate(-114.14) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(25.86 69.88) rotate(-110.31) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(25.08 67.75) rotate(-106.59) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(24.43 65.58) rotate(-102.85) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(23.92 63.37) rotate(-99.08) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(23.57 61.15) rotate(-95.33) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(23.35 58.88) rotate(-91.52) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(23.29 56.62) rotate(-87.74) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(23.38 54.34) rotate(-83.94) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(23.61 52.1) rotate(-80.2) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(24 49.87) rotate(-76.43) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(24.53 47.65) rotate(-72.64) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(25.2 45.5) rotate(-68.88) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(26.01 43.39) rotate(-65.12) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(26.97 41.33) rotate(-61.3) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(28.06 39.32) rotate(-57.47) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(29.28 37.42) rotate(-53.66) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(30.62 35.59) rotate(-49.81) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(32.09 33.85) rotate(-45.93) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(33.64 32.24) rotate(-42.11) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(35.33 30.72) rotate(-38.21) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(37.11 29.31) rotate(-34.32) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(38.98 28.03) rotate(-30.45) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(40.93 26.89) rotate(-26.61) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(42.95 25.86) rotate(-22.28) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(45.04 24.99) rotate(-19) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(47.2 24.24) rotate(-15.12) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(49.38 23.65) rotate(-11.26) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(51.6 23.21) rotate(-7.38) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(53.83 22.92) rotate(-3.53) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(56.11 22.78) rotate(.38) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(58.38 22.79) rotate(4.25) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(60.64 22.96) rotate(8.08) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(62.87 23.27) rotate(11.9) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(65.08 23.73) rotate(15.68) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(67.27 24.35) rotate(19.49) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(69.42 25.11) rotate(23.29) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(71.49 26) rotate(27.05) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(73.51 27.03) rotate(30.81) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(75.45 28.18) rotate(34.57) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(77.33 29.47) rotate(38.36) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(79.12 30.89) rotate(42.17) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(80.79 32.39) rotate(45.91) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(82.36 34.02) rotate(49.68) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(83.83 35.75) rotate(53.48) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(85.19 37.58) rotate(57.25) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(86.42 39.49) rotate(61) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(87.52 41.47) rotate(64.72) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(88.49 43.52) rotate(68.39) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(89.32 45.61) rotate(72.07) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(90.02 47.78) rotate(75.82) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(90.58 49.98) rotate(79.59) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(90.99 52.2) rotate(83.35) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(91.26 54.45) rotate(87.12) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(91.37 56.72) rotate(90.91) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(91.34 58.98) rotate(94.68) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(91.15 61.24) rotate(98.47) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(90.82 63.49) rotate(102.24) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(90.34 65.7) rotate(106) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(89.72 67.89) rotate(109.8) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(88.95 70.01) rotate(113.55) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(88.04 72.1) rotate(117.36) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(87.01 74.1) rotate(121.14) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(85.84 76.04) rotate(124.95) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(84.55 77.89) rotate(128.78) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(83.13 79.67) rotate(132.65) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(81.58 81.34) rotate(136.55) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(79.96 82.89) rotate(140.39) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(78.19 84.35) rotate(144.32) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(76.36 85.67) rotate(148.18) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(74.45 86.86) rotate(152.01) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(72.43 87.93) rotate(155.84) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(70.36 88.86) rotate(159.67) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(68.26 89.64) rotate(163.46) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(66.06 90.29) rotate(167.38) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(63.87 90.79) rotate(171.23) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(61.62 91.14) rotate(175.13) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(59.36 91.33) rotate(179.01) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(57.11 91.37) rotate(-177.15) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(54.85 91.26) rotate(-173.31) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(52.6 91) rotate(-169.49) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(50.36 90.58) rotate(-165.65) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(48.15 90.02) rotate(-161.83) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(46.01 89.32) rotate(-158.07) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(43.92 88.48) rotate(-154.32) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(41.86 87.49) rotate(-150.52) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(39.89 86.38) rotate(-146.75) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(37.99 85.13) rotate(-142.97) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(36.19 83.78) rotate(-139.22) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+    <text class="cls-3" transform="translate(34.45 82.28) rotate(-135.4) scale(1.01 1)"><tspan x="0" y="0">1</tspan></text>
+    <text class="cls-3" transform="translate(32.85 80.7) rotate(-131.64) scale(1.01 1)"><tspan x="0" y="0">0</tspan></text>
+  </g>
+  <g id="Dials">
+    <g>
+      <g>
+        <path class="cls-197" d="M57.33,8.21v2.52"/>
+        <path class="cls-197" d="M57.33,103.44v2.52"/>
+      </g>
+      <g>
+        <path class="cls-197" d="M19.89,25.67l1.93,1.62"/>
+        <path class="cls-197" d="M92.84,86.88l1.93,1.62"/>
+      </g>
+      <g>
+        <path class="cls-197" d="M9.19,65.57l2.48-.44"/>
+        <path class="cls-197" d="M102.98,49.03l2.48-.44"/>
+      </g>
+      <g>
+        <path class="cls-197" d="M32.89,99.41l1.25-2.17"/>
+        <path class="cls-197" d="M80.3,17.29l1.25-2.17"/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <path class="cls-197" d="M69.82,11.8l-.16,.56"/>
+        <path class="cls-197" d="M44.99,101.74l-.16,.56"/>
+      </g>
+      <g>
+        <path class="cls-197" d="M30.7,18.4l.33,.48"/>
+        <path class="cls-197" d="M83.63,95.22l.33,.48"/>
+      </g>
+      <g>
+        <path class="cls-197" d="M10.6,52.6l.58,.06"/>
+        <path class="cls-197" d="M103.48,61.44l.58,.06"/>
+      </g>
+      <g>
+        <path class="cls-197" d="M23.88,89.99l.42-.41"/>
+        <path class="cls-197" d="M90.35,24.52l.42-.41"/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <path class="cls-197" d="M43.03,12.31l.18,.55"/>
+        <path class="cls-197" d="M71.45,101.18l.18,.55"/>
+      </g>
+      <g>
+        <path class="cls-197" d="M13.89,39.24l.54,.22"/>
+        <path class="cls-197" d="M100.23,74.59l.54,.22"/>
+      </g>
+      <g>
+        <path class="cls-197" d="M15.78,78.87l.52-.27"/>
+        <path class="cls-197" d="M98.36,35.45l.52-.27"/>
+      </g>
+    </g>
+  </g>
+  <g id="Badge">
+    <path class="cls-1" d="M68.93,58.27l-2.54-8.6c-.05-.17-.19-.28-.35-.28h0c-1.4-.51-2.46-.9-4.49-2.16-1.27-.79-2.53-1.86-4.22-1.86s-2.92,1.14-4.22,1.86c-1.57,.87-1.22,.48-4.49,2.16h0c-.16,0-.3,.11-.35,.28l-2.54,8.6c-1.75,5.92,.17,12.41,4.74,16.07l6.86,5.49,6.86-5.49c4.57-3.66,6.49-10.15,4.74-16.07Z"/>
+    <path class="cls-2" d="M66.88,59.04l-2.09-7.08c-.04-.14-.16-.23-.29-.23h0c-1.15-.42-2.03-.74-3.7-1.78-1.04-.65-2.08-1.53-3.47-1.53s-2.4,.94-3.47,1.53c-1.29,.72-1,.39-3.7,1.78h0c-.13,0-.25,.09-.29,.23l-2.09,7.08c-1.44,4.87,.14,10.21,3.9,13.23l5.65,4.52,5.65-4.52c3.76-3.01,5.34-8.35,3.9-13.23Z"/>
+    <path class="cls-16" d="M67.98,58.63l-2.33-7.9c-.05-.16-.18-.26-.33-.26h0c-1.29-.47-2.26-.83-4.13-1.98-1.17-.72-2.33-1.71-3.87-1.71s-2.68,1.05-3.87,1.71c-1.44,.8-1.12,.44-4.13,1.98h0c-.15,0-.28,.11-.33,.26l-2.33,7.9c-1.6,5.44,.15,11.4,4.35,14.76l6.3,5.04,6.3-5.04c4.2-3.36,5.96-9.32,4.35-14.76Z"/>
+    <path class="cls-79" d="M66.21,59.29l-1.94-6.58c-.04-.13-.15-.22-.27-.22h0c-1.07-.39-1.89-.69-3.44-1.65-.97-.6-1.94-1.42-3.23-1.42s-2.23,.87-3.23,1.42c-1.2,.67-.93,.37-3.44,1.65h0c-.12,0-.23,.09-.27,.22l-1.94,6.58c-1.34,4.53,.13,9.5,3.63,12.3l5.25,4.2,5.25-4.2c3.5-2.8,4.97-7.77,3.63-12.3Z"/>
+    <g>
+      <polygon class="cls-101" points="49.83 68.74 55.63 64.18 54.47 62.5 49.83 68.74"/>
+      <polygon class="cls-100" points="49.87 68.71 55.62 64.18 54.47 62.52 49.87 68.71"/>
+      <polygon class="cls-190" points="49.91 68.67 55.61 64.18 54.47 62.53 49.91 68.67"/>
+      <polygon class="cls-143" points="49.94 68.63 55.6 64.17 54.47 62.54 49.94 68.63"/>
+      <polygon class="cls-157" points="49.98 68.59 55.59 64.17 54.47 62.55 49.98 68.59"/>
+      <polygon class="cls-150" points="50.02 68.55 55.58 64.17 54.47 62.56 50.02 68.55"/>
+      <polygon class="cls-154" points="50.06 68.51 55.57 64.17 54.47 62.57 50.06 68.51"/>
+      <polygon class="cls-111" points="50.1 68.47 55.56 64.16 54.47 62.58 50.1 68.47"/>
+      <polygon class="cls-151" points="50.13 68.43 55.55 64.16 54.47 62.6 50.13 68.43"/>
+      <polygon class="cls-155" points="50.17 68.39 55.55 64.16 54.47 62.61 50.17 68.39"/>
+      <polygon class="cls-105" points="50.21 68.35 55.54 64.16 54.47 62.62 50.21 68.35"/>
+      <polygon class="cls-102" points="50.25 68.31 55.53 64.16 54.47 62.63 50.25 68.31"/>
+      <polygon class="cls-129" points="50.29 68.27 55.52 64.15 54.47 62.64 50.29 68.27"/>
+      <polygon class="cls-170" points="50.32 68.23 55.51 64.15 54.47 62.65 50.32 68.23"/>
+      <polygon class="cls-192" points="50.36 68.2 55.5 64.15 54.47 62.66 50.36 68.2"/>
+      <polygon class="cls-184" points="50.4 68.16 55.49 64.15 54.47 62.68 50.4 68.16"/>
+      <polygon class="cls-130" points="50.44 68.12 55.48 64.14 54.47 62.69 50.44 68.12"/>
+      <polygon class="cls-164" points="50.48 68.08 55.47 64.14 54.48 62.7 50.48 68.08"/>
+      <polygon class="cls-161" points="50.51 68.04 55.46 64.14 54.48 62.71 50.51 68.04"/>
+      <polygon class="cls-178" points="50.55 68 55.46 64.14 54.48 62.72 50.55 68"/>
+      <polygon class="cls-179" points="50.59 67.96 55.45 64.14 54.48 62.73 50.59 67.96"/>
+      <polygon class="cls-28" points="50.63 67.92 55.44 64.13 54.48 62.74 50.63 67.92"/>
+      <polygon class="cls-27" points="50.67 67.88 55.43 64.13 54.48 62.76 50.67 67.88"/>
+      <polygon class="cls-35" points="50.7 67.84 55.42 64.13 54.48 62.77 50.7 67.84"/>
+      <polygon class="cls-137" points="50.74 67.8 55.41 64.13 54.48 62.78 50.74 67.8"/>
+      <polygon class="cls-26" points="50.78 67.76 55.4 64.12 54.48 62.79 50.78 67.76"/>
+      <polygon class="cls-182" points="50.82 67.72 55.39 64.12 54.48 62.8 50.82 67.72"/>
+      <polygon class="cls-188" points="50.86 67.68 55.38 64.12 54.48 62.81 50.86 67.68"/>
+      <polygon class="cls-120" points="50.89 67.65 55.37 64.12 54.48 62.82 50.89 67.65"/>
+      <polygon class="cls-41" points="50.93 67.61 55.37 64.12 54.48 62.83 50.93 67.61"/>
+      <polygon class="cls-131" points="50.97 67.57 55.36 64.11 54.48 62.85 50.97 67.57"/>
+      <polygon class="cls-60" points="51.01 67.53 55.35 64.11 54.48 62.86 51.01 67.53"/>
+      <polygon class="cls-36" points="51.05 67.49 55.34 64.11 54.48 62.87 51.05 67.49"/>
+      <polygon class="cls-126" points="51.08 67.45 55.33 64.11 54.48 62.88 51.08 67.45"/>
+      <polygon class="cls-136" points="51.12 67.41 55.32 64.1 54.48 62.89 51.12 67.41"/>
+      <polygon class="cls-39" points="51.16 67.37 55.31 64.1 54.48 62.9 51.16 67.37"/>
+      <polygon class="cls-73" points="51.2 67.33 55.3 64.1 54.48 62.91 51.2 67.33"/>
+      <polygon class="cls-66" points="51.24 67.29 55.29 64.1 54.48 62.93 51.24 67.29"/>
+      <polygon class="cls-70" points="51.27 67.25 55.28 64.1 54.48 62.94 51.27 67.25"/>
+      <polygon class="cls-53" points="51.31 67.21 55.27 64.09 54.48 62.95 51.31 67.21"/>
+      <polygon class="cls-46" points="51.35 67.17 55.27 64.09 54.48 62.96 51.35 67.17"/>
+      <polygon class="cls-78" points="51.39 67.13 55.26 64.09 54.48 62.97 51.39 67.13"/>
+      <polygon class="cls-52" points="51.43 67.1 55.25 64.09 54.48 62.98 51.43 67.1"/>
+      <polygon class="cls-94" points="51.46 67.06 55.24 64.08 54.48 62.99 51.46 67.06"/>
+      <polygon class="cls-65" points="51.5 67.02 55.23 64.08 54.49 63.01 51.5 67.02"/>
+      <polygon class="cls-88" points="51.54 66.98 55.22 64.08 54.49 63.02 51.54 66.98"/>
+      <polygon class="cls-90" points="51.58 66.94 55.21 64.08 54.49 63.03 51.58 66.94"/>
+      <polygon class="cls-96" points="51.62 66.9 55.2 64.08 54.49 63.04 51.62 66.9"/>
+      <polygon class="cls-21" points="51.65 66.86 55.19 64.07 54.49 63.05 51.65 66.86"/>
+      <polygon class="cls-15" points="51.69 66.82 55.18 64.07 54.49 63.06 51.69 66.82"/>
+      <polygon class="cls-7" points="51.73 66.78 55.18 64.07 54.49 63.07 51.73 66.78"/>
+      <polygon class="cls-24" points="51.77 66.74 55.17 64.07 54.49 63.08 51.77 66.74"/>
+    </g>
+    <g>
+      <polygon class="cls-101" points="64.49 68.74 59.95 62.84 58.36 64.09 64.49 68.74"/>
+      <polygon class="cls-100" points="64.45 68.71 59.94 62.85 58.38 64.09 64.45 68.71"/>
+      <polygon class="cls-190" points="64.41 68.67 59.94 62.86 58.39 64.09 64.41 68.67"/>
+      <polygon class="cls-143" points="64.37 68.63 59.94 62.87 58.4 64.09 64.37 68.63"/>
+      <polygon class="cls-158" points="64.33 68.59 59.94 62.88 58.41 64.09 64.33 68.59"/>
+      <polygon class="cls-189" points="64.29 68.55 59.94 62.89 58.42 64.09 64.29 68.55"/>
+      <polygon class="cls-154" points="64.25 68.51 59.93 62.9 58.43 64.09 64.25 68.51"/>
+      <polygon class="cls-149" points="64.21 68.47 59.93 62.91 58.44 64.08 64.21 68.47"/>
+      <polygon class="cls-153" points="64.17 68.43 59.93 62.92 58.45 64.08 64.17 68.43"/>
+      <polygon class="cls-116" points="64.13 68.39 59.93 62.93 58.46 64.08 64.13 68.39"/>
+      <polygon class="cls-106" points="64.09 68.35 59.93 62.94 58.48 64.08 64.09 68.35"/>
+      <polygon class="cls-113" points="64.05 68.31 59.92 62.95 58.49 64.08 64.05 68.31"/>
+      <polygon class="cls-147" points="64.01 68.27 59.92 62.96 58.5 64.08 64.01 68.27"/>
+      <polygon class="cls-146" points="63.98 68.23 59.92 62.97 58.51 64.08 63.98 68.23"/>
+      <polygon class="cls-194" points="63.94 68.2 59.92 62.98 58.52 64.08 63.94 68.2"/>
+      <polygon class="cls-191" points="63.9 68.16 59.92 62.99 58.53 64.08 63.9 68.16"/>
+      <polygon class="cls-128" points="63.86 68.12 59.92 63 58.54 64.08 63.86 68.12"/>
+      <polygon class="cls-163" points="63.82 68.08 59.91 63.01 58.55 64.08 63.82 68.08"/>
+      <polygon class="cls-141" points="63.78 68.04 59.91 63.02 58.56 64.08 63.78 68.04"/>
+      <polygon class="cls-168" points="63.74 68 59.91 63.03 58.58 64.08 63.74 68"/>
+      <polygon class="cls-174" points="63.7 67.96 59.91 63.04 58.59 64.08 63.7 67.96"/>
+      <polygon class="cls-11" points="63.66 67.92 59.91 63.05 58.6 64.07 63.66 67.92"/>
+      <polygon class="cls-13" points="63.62 67.88 59.9 63.06 58.61 64.07 63.62 67.88"/>
+      <polygon class="cls-123" points="63.58 67.84 59.9 63.06 58.62 64.07 63.58 67.84"/>
+      <polygon class="cls-125" points="63.54 67.8 59.9 63.07 58.63 64.07 63.54 67.8"/>
+      <polygon class="cls-173" points="63.5 67.76 59.9 63.08 58.64 64.07 63.5 67.76"/>
+      <polygon class="cls-176" points="63.46 67.72 59.9 63.09 58.65 64.07 63.46 67.72"/>
+      <polygon class="cls-32" points="63.42 67.69 59.89 63.1 58.67 64.07 63.42 67.69"/>
+      <polygon class="cls-183" points="63.38 67.65 59.89 63.11 58.68 64.07 63.38 67.65"/>
+      <polygon class="cls-135" points="63.34 67.61 59.89 63.12 58.69 64.07 63.34 67.61"/>
+      <polygon class="cls-61" points="63.3 67.57 59.89 63.13 58.7 64.07 63.3 67.57"/>
+      <polygon class="cls-55" points="63.26 67.53 59.89 63.14 58.71 64.07 63.26 67.53"/>
+      <polygon class="cls-124" points="63.22 67.49 59.88 63.15 58.72 64.07 63.22 67.49"/>
+      <polygon class="cls-29" points="63.18 67.45 59.88 63.16 58.73 64.07 63.18 67.45"/>
+      <polygon class="cls-49" points="63.14 67.41 59.88 63.17 58.74 64.07 63.14 67.41"/>
+      <polygon class="cls-119" points="63.11 67.37 59.88 63.18 58.75 64.07 63.11 67.37"/>
+      <polygon class="cls-98" points="63.07 67.33 59.88 63.19 58.77 64.06 63.07 67.33"/>
+      <polygon class="cls-92" points="63.03 67.29 59.87 63.2 58.78 64.06 63.03 67.29"/>
+      <polygon class="cls-67" points="62.99 67.25 59.87 63.21 58.79 64.06 62.99 67.25"/>
+      <polygon class="cls-45" points="62.95 67.21 59.87 63.22 58.8 64.06 62.95 67.21"/>
+      <polygon class="cls-75" points="62.91 67.18 59.87 63.23 58.81 64.06 62.91 67.18"/>
+      <polygon class="cls-42" points="62.87 67.14 59.87 63.24 58.82 64.06 62.87 67.14"/>
+      <polygon class="cls-95" points="62.83 67.1 59.86 63.25 58.83 64.06 62.83 67.1"/>
+      <polygon class="cls-64" points="62.79 67.06 59.86 63.26 58.84 64.06 62.79 67.06"/>
+      <polygon class="cls-85" points="62.75 67.02 59.86 63.27 58.85 64.06 62.75 67.02"/>
+      <polygon class="cls-71" points="62.71 66.98 59.86 63.28 58.87 64.06 62.71 66.98"/>
+      <polygon class="cls-84" points="62.67 66.94 59.86 63.29 58.88 64.06 62.67 66.94"/>
+      <polygon class="cls-22" points="62.63 66.9 59.85 63.3 58.89 64.06 62.63 66.9"/>
+      <polygon class="cls-15" points="62.59 66.86 59.85 63.31 58.9 64.06 62.59 66.86"/>
+      <polygon class="cls-8" points="62.55 66.82 59.85 63.31 58.91 64.06 62.55 66.82"/>
+      <polygon class="cls-24" points="62.51 66.78 59.85 63.32 58.92 64.05 62.51 66.78"/>
+    </g>
+    <g>
+      <polygon class="cls-101" points="64.49 54.76 59.06 59.8 60.35 61.37 64.49 54.76"/>
+      <polygon class="cls-100" points="64.46 54.8 59.07 59.8 60.35 61.36 64.46 54.8"/>
+      <polygon class="cls-190" points="64.42 54.84 59.08 59.8 60.35 61.35 64.42 54.84"/>
+      <polygon class="cls-144" points="64.39 54.88 59.09 59.8 60.34 61.34 64.39 54.88"/>
+      <polygon class="cls-148" points="64.36 54.92 59.1 59.8 60.34 61.33 64.36 54.92"/>
+      <polygon class="cls-58" points="64.32 54.96 59.11 59.81 60.34 61.32 64.32 54.96"/>
+      <polygon class="cls-57" points="64.29 55 59.12 59.81 60.34 61.31 64.29 55"/>
+      <polygon class="cls-110" points="64.26 55.04 59.13 59.81 60.34 61.3 64.26 55.04"/>
+      <polygon class="cls-162" points="64.23 55.08 59.13 59.81 60.34 61.29 64.23 55.08"/>
+      <polygon class="cls-165" points="64.19 55.12 59.14 59.81 60.34 61.28 64.19 55.12"/>
+      <polygon class="cls-117" points="64.16 55.16 59.15 59.81 60.34 61.26 64.16 55.16"/>
+      <polygon class="cls-107" points="64.13 55.2 59.16 59.81 60.34 61.25 64.13 55.2"/>
+      <polygon class="cls-114" points="64.09 55.24 59.17 59.81 60.33 61.24 64.09 55.24"/>
+      <polygon class="cls-147" points="64.06 55.28 59.18 59.82 60.33 61.23 64.06 55.28"/>
+      <polygon class="cls-146" points="64.03 55.32 59.19 59.82 60.33 61.22 64.03 55.32"/>
+      <polygon class="cls-193" points="64 55.36 59.19 59.82 60.33 61.21 64 55.36"/>
+      <polygon class="cls-185" points="63.96 55.4 59.2 59.82 60.33 61.2 63.96 55.4"/>
+      <polygon class="cls-130" points="63.93 55.44 59.21 59.82 60.33 61.19 63.93 55.44"/>
+      <polygon class="cls-164" points="63.9 55.48 59.22 59.82 60.33 61.18 63.9 55.48"/>
+      <polygon class="cls-160" points="63.86 55.52 59.23 59.82 60.33 61.17 63.86 55.52"/>
+      <polygon class="cls-175" points="63.83 55.56 59.24 59.83 60.32 61.16 63.83 55.56"/>
+      <polygon class="cls-171" points="63.8 55.6 59.25 59.83 60.32 61.15 63.8 55.6"/>
+      <polygon class="cls-145" points="63.77 55.64 59.25 59.83 60.32 61.14 63.77 55.64"/>
+      <polygon class="cls-10" points="63.73 55.68 59.26 59.83 60.32 61.13 63.73 55.68"/>
+      <polygon class="cls-25" points="63.7 55.72 59.27 59.83 60.32 61.12 63.7 55.72"/>
+      <polygon class="cls-121" points="63.67 55.76 59.28 59.83 60.32 61.1 63.67 55.76"/>
+      <polygon class="cls-180" points="63.63 55.8 59.29 59.83 60.32 61.09 63.63 55.8"/>
+      <polygon class="cls-173" points="63.6 55.84 59.3 59.84 60.32 61.08 63.6 55.84"/>
+      <polygon class="cls-177" points="63.57 55.88 59.31 59.84 60.32 61.07 63.57 55.88"/>
+      <polygon class="cls-30" points="63.53 55.92 59.32 59.84 60.31 61.06 63.53 55.92"/>
+      <polygon class="cls-187" points="63.5 55.96 59.32 59.84 60.31 61.05 63.5 55.96"/>
+      <polygon class="cls-133" points="63.47 56 59.33 59.84 60.31 61.04 63.47 56"/>
+      <polygon class="cls-44" points="63.44 56.04 59.34 59.84 60.31 61.03 63.44 56.04"/>
+      <polygon class="cls-59" points="63.4 56.08 59.35 59.84 60.31 61.02 63.4 56.08"/>
+      <polygon class="cls-36" points="63.37 56.12 59.36 59.85 60.31 61.01 63.37 56.12"/>
+      <polygon class="cls-34" points="63.34 56.16 59.37 59.85 60.31 61 63.34 56.16"/>
+      <polygon class="cls-136" points="63.3 56.2 59.38 59.85 60.31 60.99 63.3 56.2"/>
+      <polygon class="cls-37" points="63.27 56.24 59.38 59.85 60.3 60.98 63.27 56.24"/>
+      <polygon class="cls-72" points="63.24 56.28 59.39 59.85 60.3 60.97 63.24 56.28"/>
+      <polygon class="cls-99" points="63.21 56.32 59.4 59.85 60.3 60.96 63.21 56.32"/>
+      <polygon class="cls-92" points="63.17 56.36 59.41 59.85 60.3 60.94 63.17 56.36"/>
+      <polygon class="cls-67" points="63.14 56.4 59.42 59.85 60.3 60.93 63.14 56.4"/>
+      <polygon class="cls-56" points="63.11 56.44 59.43 59.86 60.3 60.92 63.11 56.44"/>
+      <polygon class="cls-69" points="63.07 56.48 59.44 59.86 60.3 60.91 63.07 56.48"/>
+      <polygon class="cls-77" points="63.04 56.52 59.45 59.86 60.3 60.9 63.04 56.52"/>
+      <polygon class="cls-93" points="63.01 56.56 59.45 59.86 60.3 60.89 63.01 56.56"/>
+      <polygon class="cls-81" points="62.98 56.6 59.46 59.86 60.29 60.88 62.98 56.6"/>
+      <polygon class="cls-83" points="62.94 56.64 59.47 59.86 60.29 60.87 62.94 56.64"/>
+      <polygon class="cls-97" points="62.91 56.68 59.48 59.86 60.29 60.86 62.91 56.68"/>
+      <polygon class="cls-89" points="62.88 56.72 59.49 59.87 60.29 60.85 62.88 56.72"/>
+      <polygon class="cls-91" points="62.84 56.76 59.5 59.87 60.29 60.84 62.84 56.76"/>
+      <polygon class="cls-17" points="62.81 56.8 59.51 59.87 60.29 60.83 62.81 56.8"/>
+      <polygon class="cls-19" points="62.78 56.84 59.51 59.87 60.29 60.82 62.78 56.84"/>
+      <polygon class="cls-6" points="62.75 56.88 59.52 59.87 60.29 60.81 62.75 56.88"/>
+      <polygon class="cls-24" points="62.71 56.92 59.53 59.87 60.28 60.8 62.71 56.92"/>
+    </g>
+    <g>
+      <polygon class="cls-101" points="50.08 54.76 54.48 61.11 55.7 59.46 50.08 54.76"/>
+      <polygon class="cls-100" points="50.11 54.8 54.48 61.1 55.69 59.47 50.11 54.8"/>
+      <polygon class="cls-190" points="50.15 54.84 54.48 61.09 55.68 59.47 50.15 54.84"/>
+      <polygon class="cls-143" points="50.19 54.88 54.49 61.08 55.67 59.47 50.19 54.88"/>
+      <polygon class="cls-156" points="50.22 54.92 54.49 61.07 55.67 59.47 50.22 54.92"/>
+      <polygon class="cls-150" points="50.26 54.96 54.49 61.06 55.66 59.47 50.26 54.96"/>
+      <polygon class="cls-154" points="50.29 55 54.49 61.05 55.65 59.48 50.29 55"/>
+      <polygon class="cls-112" points="50.33 55.04 54.49 61.04 55.64 59.48 50.33 55.04"/>
+      <polygon class="cls-152" points="50.37 55.08 54.49 61.02 55.63 59.48 50.37 55.08"/>
+      <polygon class="cls-159" points="50.4 55.12 54.49 61.01 55.62 59.48 50.4 55.12"/>
+      <polygon class="cls-104" points="50.44 55.16 54.49 61 55.61 59.48 50.44 55.16"/>
+      <polygon class="cls-103" points="50.47 55.2 54.49 60.99 55.6 59.49 50.47 55.2"/>
+      <polygon class="cls-127" points="50.51 55.24 54.49 60.98 55.59 59.49 50.51 55.24"/>
+      <polygon class="cls-169" points="50.54 55.28 54.49 60.97 55.58 59.49 50.54 55.28"/>
+      <polygon class="cls-167" points="50.58 55.32 54.49 60.96 55.58 59.49 50.58 55.32"/>
+      <polygon class="cls-186" points="50.62 55.36 54.49 60.95 55.57 59.5 50.62 55.36"/>
+      <polygon class="cls-181" points="50.65 55.4 54.49 60.94 55.56 59.5 50.65 55.4"/>
+      <polygon class="cls-138" points="50.69 55.44 54.49 60.93 55.55 59.5 50.69 55.44"/>
+      <polygon class="cls-142" points="50.72 55.48 54.5 60.91 55.54 59.5 50.72 55.48"/>
+      <polygon class="cls-140" points="50.76 55.51 54.5 60.9 55.53 59.5 50.76 55.51"/>
+      <polygon class="cls-172" points="50.79 55.55 54.5 60.89 55.52 59.51 50.79 55.55"/>
+      <polygon class="cls-139" points="50.83 55.59 54.5 60.88 55.51 59.51 50.83 55.59"/>
+      <polygon class="cls-9" points="50.87 55.63 54.5 60.87 55.5 59.51 50.87 55.63"/>
+      <polygon class="cls-12" points="50.9 55.67 54.5 60.86 55.49 59.51 50.9 55.67"/>
+      <polygon class="cls-122" points="50.94 55.71 54.5 60.85 55.49 59.51 50.94 55.71"/>
+      <polygon class="cls-180" points="50.97 55.75 54.5 60.84 55.48 59.52 50.97 55.75"/>
+      <polygon class="cls-173" points="51.01 55.79 54.5 60.83 55.47 59.52 51.01 55.79"/>
+      <polygon class="cls-177" points="51.04 55.83 54.5 60.81 55.46 59.52 51.04 55.83"/>
+      <polygon class="cls-31" points="51.08 55.87 54.5 60.8 55.45 59.52 51.08 55.87"/>
+      <polygon class="cls-166" points="51.12 55.91 54.5 60.79 55.44 59.52 51.12 55.91"/>
+      <polygon class="cls-132" points="51.15 55.95 54.5 60.78 55.43 59.53 51.15 55.95"/>
+      <polygon class="cls-48" points="51.19 55.99 54.5 60.77 55.42 59.53 51.19 55.99"/>
+      <polygon class="cls-54" points="51.22 56.03 54.51 60.76 55.41 59.53 51.22 56.03"/>
+      <polygon class="cls-40" points="51.26 56.07 54.51 60.75 55.4 59.53 51.26 56.07"/>
+      <polygon class="cls-33" points="51.29 56.11 54.51 60.74 55.4 59.53 51.29 56.11"/>
+      <polygon class="cls-47" points="51.33 56.15 54.51 60.73 55.39 59.54 51.33 56.15"/>
+      <polygon class="cls-50" points="51.37 56.19 54.51 60.72 55.38 59.54 51.37 56.19"/>
+      <polygon class="cls-76" points="51.4 56.23 54.51 60.7 55.37 59.54 51.4 56.23"/>
+      <polygon class="cls-68" points="51.44 56.26 54.51 60.69 55.36 59.54 51.44 56.26"/>
+      <polygon class="cls-74" points="51.47 56.3 54.51 60.68 55.35 59.55 51.47 56.3"/>
+      <polygon class="cls-43" points="51.51 56.34 54.51 60.67 55.34 59.55 51.51 56.34"/>
+      <polygon class="cls-51" points="51.54 56.38 54.51 60.66 55.33 59.55 51.54 56.38"/>
+      <polygon class="cls-80" points="51.58 56.42 54.51 60.65 55.32 59.55 51.58 56.42"/>
+      <polygon class="cls-86" points="51.62 56.46 54.51 60.64 55.31 59.55 51.62 56.46"/>
+      <polygon class="cls-82" points="51.65 56.5 54.51 60.63 55.31 59.56 51.65 56.5"/>
+      <polygon class="cls-63" points="51.69 56.54 54.51 60.62 55.3 59.56 51.69 56.54"/>
+      <polygon class="cls-87" points="51.72 56.58 54.52 60.61 55.29 59.56 51.72 56.58"/>
+      <polygon class="cls-90" points="51.76 56.62 54.52 60.59 55.28 59.56 51.76 56.62"/>
+      <polygon class="cls-96" points="51.79 56.66 54.52 60.58 55.27 59.56 51.79 56.66"/>
+      <polygon class="cls-20" points="51.83 56.7 54.52 60.57 55.26 59.57 51.83 56.7"/>
+      <polygon class="cls-14" points="51.87 56.74 54.52 60.56 55.25 59.57 51.87 56.74"/>
+      <polygon class="cls-6" points="51.9 56.78 54.52 60.55 55.24 59.57 51.9 56.78"/>
+      <polygon class="cls-24" points="51.94 56.82 54.52 60.54 55.23 59.57 51.94 56.82"/>
+    </g>
+    <ellipse class="cls-2" cx="53.04" cy="70.32" rx=".71" ry=".78"/>
+    <ellipse class="cls-2" cx="60.89" cy="70.32" rx=".71" ry=".78"/>
+    <ellipse class="cls-2" cx="54.21" cy="53.56" rx=".71" ry=".78"/>
+    <ellipse class="cls-2" cx="60.12" cy="53.56" rx=".71" ry=".78"/>
+    <ellipse class="cls-2" cx="64.99" cy="62.6" rx=".71" ry=".78"/>
+    <ellipse class="cls-2" cx="49.67" cy="62.6" rx=".71" ry=".78"/>
+    <ellipse id="_1" data-name="1" class="cls-118" cx="57.33" cy="62.6" rx="6.27" ry="6.9"/>
+    <ellipse id="_2" data-name="2" class="cls-23" cx="57.33" cy="62.6" rx="5.93" ry="6.54"/>
+    <ellipse id="_3" data-name="3" class="cls-115" cx="57.33" cy="62.6" rx="5.51" ry="6.07"/>
+    <ellipse id="_4" data-name="4" class="cls-38" cx="57.33" cy="62.6" rx="5.18" ry="5.71"/>
+    <ellipse id="_5" data-name="5" class="cls-109" cx="57.33" cy="62.6" rx="4.47" ry="4.92"/>
+    <ellipse id="_6" data-name="6" class="cls-134" cx="57.33" cy="62.6" rx="3.9" ry="4.3"/>
+    <g id="Bitcoin" class="cls-212">
+      <path class="cls-23" d="M58.22,62.5h-.12c.55,0,.99-.49,.99-1.09v-.07c0-.6-.44-1.09-.99-1.09h-.06v-.88h-.43v.88h-.62v-.88h-.43v.88h-1.17v.71h.49v3.3h-.56v.68h1.24v.88h.43v-.88h.62v.88h.43v-.88h.25c.59-.04,1.05-.57,1.05-1.22h0c0-.68-.5-1.22-1.11-1.22Zm-1.3-1.53h.64c.29,0,.52,.26,.52,.58s-.24,.58-.52,.58h-.64v-1.16Zm1.33,2.62c0,.32-.24,.58-.52,.58h-.8v-1.22h.8c.29,0,.52,.26,.52,.58v.07Z"/>
+    </g>
+  </g>
+</svg>

@@ -2,179 +2,29 @@
 
 /* Color Variables */
 :root {
-    --color-primary-deep-blue: #003366;
-    --color-secondary-vibrant-teal: #29ABE2;
-    --color-secondary-slate-gray: #f7f8f9;
+    --color-primary-blue: #003366;
+    --color-secondary-teal: #29ABE2;
+    --color-secondary-gray: #f7f8f9;
     --color-secondary-silver: #b2b1b1;
-    --color-accent-bright-green: #00FF00;
+    --color-accent-green: #00FF00;
     --color-accent-gold: #FFD700;
-    --color-navbar-dark: #001F3F;
-}
-
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --color-navbar-dark: #333;
 }
 
 /* Base Styles */
 body,
 html {
-    font-family: 'Poppins', Arial, sans-serif;
-    background-color: var(--color-secondary-slate-gray);
-    line-height: 1.6;
     margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: var(--color-secondary-gray);
+    line-height: 1.6;
     height: 100%;
 }
 
 a {
     text-decoration: none;
 }
-
-/* Navigation Bar Styles */
-.navbar {
-    color: var(--color-navbar-dark);
-    position: relative;
-    text-align: center;
-    z-index: 5;
-    /* Ensure navbar is below the logo */
-}
-
-/* Logo or Branding */
-.navbar-brand {
-    position: absolute;
-    left: 50%;
-    top: 60px;
-    transform: translateX(-50%);
-    z-index: 10;
-    /* Higher z-index to ensure logo is above other content */
-    padding: 10px;
-    max-width: 200px;
-    /* Adjust as needed */
-    width: 100%;
-    /* Full width to center the logo */
-}
-
-/* Adjust the image size as needed */
-.navbar-brand img {
-    height: auto;
-    max-height: 100px;
-    /* Adjust as needed */
-    max-width: 100%;
-    /* Ensures the image is not wider than its container */
-    width: auto;
-    /* Maintain aspect ratio */
-}
-
-/* Navigation Links */
-.navbar-container {
-    display: flex;
-    justify-content: center;
-    padding-top: 140px;
-    /* Increased padding to push the links down below the logo */
-    background-color: var(--color-navbar-dark);
-    /* Different variable for navbar links background */
-    width: 100%;
-    padding-bottom: 10px;
-}
-
-.navbar-links {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    background-color: var(--color-secondary-slate-gray);
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.navbar-links li {
-    padding: 0 15px;
-    text-align: center;
-}
-
-.navbar-links a {
-    text-decoration: none;
-    color: inherit;
-    /* Inherits color from parent */
-    display: block;
-    /* Make the anchor fill the li element */
-}
-
-/* Add responsive styles if needed */
-@media (max-width: 768px) {
-    .navbar-links {
-        display: none;
-        /* or change to flex when active */
-    }
-
-    .navbar-toggle {
-        display: block;
-    }
-}
-
-/* When .active class is toggled on */
-.navbar-links.active {
-    display: flex;
-    flex-direction: column;
-    /* Add styles for mobile menu */
-}
-
-
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .navbar-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: var(--color-navbar-dark);
-        border-top: 1px solid var(--color-secondary-silver);
-    }
-
-    .navbar-links li {
-        padding: 1rem;
-        border-bottom: 1px solid var(--color-secondary-silver);
-    }
-
-    .navbar-links a {
-        width: 100%;
-        padding: 1rem;
-    }
-
-    .navbar-toggle {
-        display: flex;
-    }
-
-    .navbar-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .navbar-toggle.active span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .navbar-toggle.active span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-}
-
-/* Add a transition for smooth opening/closing of the mobile navbar */
-.navbar-links,
-.navbar-toggle span {
-    transition: all 0.3s ease;
-}
-
 
 /* Particle Container Styles */
 #particle-container {
@@ -188,6 +38,7 @@ a {
 /* Hero Section Styles */
 #home {
     position: absolute;
+    padding: 100px 0;
     top: 0;
     left: 0;
     right: 0;
@@ -207,7 +58,7 @@ a {
     text-align: center;
     flex: 1;
     padding: 50px;
-    color: var(--color-secondary-slate-gray);
+    color: var(--color-secondary-gray);
 }
 
 .hero-text h1 {
@@ -224,7 +75,7 @@ a {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--color-accent-gold);
-    color: var(--color-primary-deep-blue);
+    color: var(--color-primary-blue);
     border-radius: 5px;
     text-decoration: none;
     margin-top: 20px;
@@ -232,21 +83,12 @@ a {
 }
 
 .contact-button:hover {
-    background-color: var(--color-accent-gold);
+    background-color: var(--color-secondary-gray);
     transform: scale(1.05);
 }
 
-/* Sections with Background */
-#audience,
-#faq {
-    padding: 50px 0;
-    text-align: center;
-    background-size: cover;
-    background-color: var(--color-secondary-slate-gray);
-}
-
 .features-container {
-    padding: 50px 0;
+    padding: 15%;
     text-align: center;
     background-size: cover;
     background-color: var(--color-accent-gold);
@@ -256,10 +98,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    /* This will make the columns of equal height */
     flex-wrap: wrap;
     gap: 10px;
-    /* Optional: Adds space between the columns */
 }
 
 .feature {
@@ -267,7 +107,7 @@ a {
     padding: 50px;
     text-align: center;
     background-size: cover;
-    background-color: var(--color-secondary-slate-gray);
+    background-color: var(--color-secondary-gray);
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -291,29 +131,34 @@ a {
     text-align: center;
 }
 
-
-#audience,
-#faq {
-    background-color: #ebebeb;
-}
-
-/* Section Headings */
-#audience h3,
-#faq h3 {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 2em;
-    text-align: center;
-}
-
-#audience h3,
-#faq h3 {
-    font-size: 1.5em;
-}
-
-#separator {
+.separator {
     padding: 40px;
-    background-color: #142335
+    background-color: #142335;
+    color: #fff;
+    text-align: center;
+    color: var(--color-secondary-gray);
+    font-size: 2.8vw;
+}
+
+.shadow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadows {
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: -15px 5px 20px #ced0d3;
+    color: var(--color-secondary-gray);
+    letter-spacing: -0.05em;
+    user-select: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-out;
+}
+
+.shadows:hover {
+    text-shadow: -16px 6px 15px #ced0d3;
 }
 
 /* Contact Section */
@@ -329,25 +174,10 @@ a {
 
 /* Footer */
 footer {
-    background-color: #1a1a1a;
+    background-color: var(--color-navbar-dark);
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
-}
-
-/* Product Details, Demo, About Us Sections */
-#details,
-#demo,
-#about {
-    padding: 50px 0;
-    text-align: center;
-}
-
-#details,
-#about {
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
 }
 
 #home>div>div:last-child {
@@ -378,42 +208,10 @@ footer {
     margin-top: 20px;
 }
 
-/* Newsletter Signup */
-#newsletter {
-    background-color: #333;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-#newsletter form {
-    display: inline-block;
-    margin-top: 20px;
-}
-
-#newsletter input[type="email"],
-#newsletter input[type="submit"] {
-    padding: 10px 20px;
-    border: none;
-    margin-right: 10px;
-}
-
-#newsletter input[type="submit"] {
-    background-color: var(--color-accent-bright-green);
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#newsletter input[type="submit"]:hover {
-    background-color: var(--color-secondary-silver);
-}
-
 /* Wrapper and Circle Styles */
 .wrapper {
     top: 0;
     left: 0;
-    width: 100vw;
     height: 100vh;
     position: relative;
     display: flex;
@@ -426,11 +224,36 @@ footer {
     overflow: hidden;
 }
 
+.wrapper-container {
+    position: relative;
+    /* Establishes a new positioning context for absolute children */
+}
+
+.vertical-text {
+    position: absolute;
+    /* Absolutely position your vertical text */
+    top: 50%;
+    /* Align the text in the middle vertically */
+    transform: translateY(-50%) rotate(-90deg);
+    /* Rotate the text and adjust its position */
+    white-space: nowrap;
+    /* Ensure the text does not wrap */
+}
+
+
 .circleWrapper {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     position: relative;
+}
+
+.vertical-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    white-space: nowrap;
+
 }
 
 /* Reload Animation Elements */
@@ -471,7 +294,7 @@ footer {
         background-size: 30%;
     }
 
-    #separator {
+    .separator {
         display: none;
     }
 
@@ -504,22 +327,14 @@ footer {
         font-size: 1em;
     }
 
-    #newsletter form {
-        flex-direction: column;
-    }
-
-    #newsletter input[type="email"],
-    #newsletter input[type="submit"] {
-        margin-top: 10px;
-    }
-
     .features-container {
-        padding: 30px 15px;
+        padding-top: 15%;
         /* Reduced padding for smaller screens */
     }
 
     .feature-div {
         gap: 10px;
+        flex-direction: column;
         /* Reduced gap for smaller screens */
     }
 
@@ -545,7 +360,7 @@ footer {
         background-size: 50%;
     }
 
-    #separator {
+    .separator {
         display: none;
     }
 
@@ -583,7 +398,7 @@ footer {
     }
 
     .features-container {
-        padding: 20px 10px;
+        padding: 20%;
         /* Further reduced padding for very small screens */
     }
 
@@ -600,5 +415,160 @@ footer {
         margin: 15px;
         /* Further reduced margin for very small screens */
     }
+}
 
+.unique-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    box-sizing: border-box;
+
+}
+
+.brand-logo img {
+    height: 40px;
+    /* or the height you desire */
+    width: auto;
+    /* this will maintain the aspect ratio */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.navbar-links li {
+    padding: 0 15px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: var(--color-accent-gold);
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-line {
+    background-color: white;
+    height: 3px;
+    width: 35px;
+    margin: 2.6px 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background-color: var(--color-navbar-dark);
+        width: 22%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+    }
+
+    .navbar-links.change {
+        transform: translateX(0);
+        padding-top: 30px;
+    }
+
+    .navbar-links li {
+        padding: 15px 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.change .navbar-links {
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .unique-navbar {
+        padding: 10px 15px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .brand-logo a {
+        font-size: 1.2em;
+        /* Adjust font size for smaller screens */
+    }
+
+    .navbar-links {
+        width: 33%;
+        padding-top: 30px;
+        transform: translateX(100%);
+    }
+
+    .navbar-links li {
+        padding: 12px 5px;
+        /* Adjust padding for list items */
+    }
+
+    .navbar-links a {
+        font-size: 0.9em;
+        /* Adjust font size for links */
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .menu-line {
+        width: 20px;
+        /* Adjust width of hamburger lines */
+    }
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.change .navbar-links {
+    transform: translateX(0);
 }

@@ -1,6 +1,4 @@
-
 //Wrapper section
-//This is the main javascript file for the wrapper
 
 window.onscroll = function () {
     scrollRotate();
@@ -20,8 +18,7 @@ image3.style.transform =
 }
 
 
-// Particle JS
-// This is the main javascript file for the particle background
+// Particle background
 
 let particles = [];
 
@@ -87,16 +84,20 @@ class Particle {
   }
 }
 
-// JavaScript to toggle the menu
-document.addEventListener('DOMContentLoaded', function () {
-  // Select the elements
-  var toggle = document.querySelector('.navbar-toggle');
-  var menu = document.querySelector('.navbar-links');
 
-  // Add event listener for click
-  toggle.addEventListener('click', function () {
-      // Toggle the active class on both the menu and the hamburger icon
-      menu.classList.toggle('active');
-      toggle.classList.toggle('active');
+// JavaScript to toggle the menu
+function toggleMenu() {
+  var menuIcon = document.querySelector('.menu-icon');
+  var navbarLinks = document.querySelector('.navbar-links');
+  menuIcon.classList.toggle('change');
+  navbarLinks.classList.toggle('change');
+}
+
+// Close the menu when a link is clicked (for mobile view)
+document.querySelectorAll('.navbar-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 768) {
+      toggleMenu();
+    }
   });
 });
