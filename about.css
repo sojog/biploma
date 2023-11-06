@@ -1,0 +1,73 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(to bottom, #2441ED, #FF7802);
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+#home {
+    background-size: cover;
+    color: #000000;
+}
+#home h1 {
+    font-size: 24px;
+    margin: 50px 0 10px;
+}
+.blue-i {
+    color: #00aeff;
+}
+.orange-text {
+    color: #FF7802;
+}
+header h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+.orange-text, .blue-i {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+#vision-section {
+    text-align: center;
+    padding: 20px;
+}
+#vision-section h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+#vision-section p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
