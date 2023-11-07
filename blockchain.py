@@ -13,6 +13,8 @@
 # http://0.0.0.0:5000/transactions
 
 
+from secrets import token_hex, token_urlsafe
+import random
 import time
 from hashlib import sha256
 import json
@@ -20,6 +22,45 @@ from flask import Flask, request
 import requests
 
 app = Flask(__name__)
+
+
+# class PasswordGenerator:
+#     def __init__(self):
+#         pass
+
+#     @staticmethod
+#     def shuffle_string(s):
+#         """Shuffle all characters of a string."""
+#         shuffled_list = random.sample(s, len(s))
+#         return ''.join(shuffled_list)
+
+#     @staticmethod
+#     def generate_random_character(start_ascii, end_ascii):
+#         """Generate a random character based on ASCII values."""
+#         return chr(random.randint(start_ascii, end_ascii))
+
+#     def generate_password(self):
+#         """Generate a random password."""
+#         # ASCII ranges for different character categories
+#         uppercase_ascii = (65, 90)
+#         lowercase_ascii = (97, 122)
+#         digit_ascii = (48, 57)
+#         special_ascii = (33, 93)
+
+#         # Generate two characters from each category
+#         uppercase_chars = [self.generate_random_character(
+#             *uppercase_ascii) for _ in range(5)]
+#         lowercase_chars = [self.generate_random_character(
+#             *lowercase_ascii) for _ in range(4)]
+#         digits = [self.generate_random_character(
+#             *digit_ascii) for _ in range(2)]
+#         specials = [self.generate_random_character(
+#             *special_ascii) for _ in range(3)]
+
+#         # Construct the password and shuffle it
+#         password = ''.join(uppercase_chars +
+#                            lowercase_chars + digits + specials)
+#         return self.shuffle_string(password)
 
 
 # 1. Define a single block
@@ -38,7 +79,7 @@ class Block:
 
 
 # 2. Define a blockchain
-class Blockchain:  # 2. Define a blockchain
+class Blockchain:
     difficulty = 4
 
     def __init__(self):
@@ -115,12 +156,20 @@ blockchain = Blockchain()
 def new_transactions():
     txs_data = request.get_json()
     for tx_data in txs_data:
-        required_fields = ["firstname", "lastname", "cnp", "dob",]
+        required_fields = ["firstname", "lastname", "cnp", "dob"]
+
+        # generate random password text in base64
+        password = token_urlsafe(16)
+
         for field in required_fields:
             if not tx_data.get(field):
                 return "Invalid transaction data", 404
+
+        tx_data["password"] = password
         tx_data["timestamp"] = time.time()
+
         blockchain.add_new_transaction(tx_data)
+
     return "Success", 201
 
 
