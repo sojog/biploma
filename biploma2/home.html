@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Biploma</title>
+  </head>
+  <body>
+    <header>
+      <h1>Biploma</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#cursuri">Cursuri</a>
+        </li>
+        <li>
+          <a href="#studenți">Studenți</a>
+        </li>
+        <li>
+          <a href="#profesori">Profesori</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="cursuri">
+      <h2>Cursuri</h2>
+      <div class="cursuri">
+      </div>
+    </section>
+    <section id="studenti">
+      <h2>Studenți</h2>
+      <div class="studenti">
+        <form id="student-login-form">
+          <h3>Autentificare Studenți</h3>
+          <label for="student-email">Adresă de email:</label>
+          <input type="email" id="student-email" required>
+          <label for="student-password">Parolă:</label>
+          <input type="password" id="student-password" required>
+          <button type="submit">Autentificare</button>
+        </form>
+      </div>
+    </section>
+    <section id="profesori">
+      <h2>Profesori</h2>
+      <div class="profesori">
+        <form id="professor-login-form">
+          <h3>Autentificare Profesori</h3>
+          <label for="professor-email">Adresă de email:</label>
+          <input type="email" id="professor-email" required>
+          <label for="professor-password">Parolă:</label>
+          <input type="password" id="professor-password" required>
+          <button type="submit">Autentificare</button>
+        </form>
+      </div>
+    </section>
+    <header class="headerTop">
+      <div class="headerContact">
+        <span>
+          <i class="fas fa-phone"></i>074xxxxxxx
+        </span>
+        <span>
+          <i class="fas fa-envelope"></i>Biploma@yahoo.com
+        </span>
+      </div>
+      <div class="headerSocial">
+        <a href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </header>
+    <header class="header">
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="contact">
+      <div class="contactform">
+        <h2>Contact</h2>
+        <form>
+          <label for="contact-name">Name:</label>
+          <input type="text" id="contact-name" name="name">
+          <br>
+          <label for="contact-email">Email:</label>
+          <input type="email" id="contact-email" name="email">
+          <br>
+          <label for="contact-message">Message:</label>
+          <br>
+          <textarea id="contact-message" name="message" rows="4" cols="50"></textarea>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="container"></div>
+    </div>
+    <footer>
+      <p>&copy;2023 Biploma.</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
+
