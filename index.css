@@ -98,10 +98,10 @@ a {
 }
 
 .features-container {
-    padding-top: 70px;
+    padding: 150px 0;
     text-align: center;
     background-size: cover;
-    background-color: var(--color-accent-gold);
+    background-color: var(--color-secondary-gray);
 }
 
 .feature-div {
@@ -143,6 +143,7 @@ a {
 
 .center-row {
     text-align: center;
+    padding: 40px;
 }
 
 .separator {
@@ -335,7 +336,7 @@ a {
     }
 
     .features-container {
-        padding-top: 15%;
+        padding: 15%;
         /* Reduced padding for smaller screens */
     }
 
