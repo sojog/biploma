@@ -8,7 +8,7 @@
     --color-secondary-silver: #b2b1b1;
     --color-accent-green: #00FF00;
     --color-accent-gold: #FFD700;
-    --color-navbar-dark: #333;
+    --color-navbar-dark: #24262b;
     --color-bright-red: #e91e63;
 }
 
@@ -42,6 +42,7 @@ a {
     height: 100vh;
     overflow: hidden;
     z-index: 1;
+    padding-top: 66px;
 }
 
 /* Hero Section Styles */
@@ -97,7 +98,7 @@ a {
 }
 
 .features-container {
-    padding: 15%;
+    padding-top: 70px;
     text-align: center;
     background-size: cover;
     background-color: var(--color-accent-gold);
@@ -137,6 +138,10 @@ a {
 .feature h3,
 .features-container h2 {
     margin: 50px;
+    text-align: center;
+}
+
+.center-row {
     text-align: center;
 }
 
@@ -428,7 +433,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: var(--color-navbar-dark);
     padding: 10px 20px;
     color: white;
     box-sizing: border-box;
