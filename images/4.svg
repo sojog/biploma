@@ -1120,10 +1120,10 @@
       <polygon class="cls-4" points="51.97 55.33 54.56 59.06 55.27 58.09 51.97 55.33"/>
       <polygon class="cls-19" points="52.01 55.37 54.56 59.05 55.26 58.09 52.01 55.37"/>
     </g>
-    <ellipse class="cls-2" cx="53.1" cy="68.7" rx=".7" ry=".77"/>
-    <ellipse class="cls-2" cx="60.84" cy="68.7" rx=".7" ry=".77"/>
-    <ellipse class="cls-2" cx="54.25" cy="52.16" rx=".7" ry=".77"/>
-    <ellipse class="cls-2" cx="60.08" cy="52.16" rx=".7" ry=".77"/>
+    <ellipse class="cls-2" cx="54.33" cy="68.7" rx=".7" ry=".77"/>
+    <ellipse class="cls-2" cx="60.33" cy="68.7" rx=".7" ry=".77"/>
+    <ellipse class="cls-2" cx="54.33" cy="53.16" rx=".7" ry=".77"/>
+    <ellipse class="cls-2" cx="60.33" cy="53.16" rx=".7" ry=".77"/>
     <ellipse class="cls-2" cx="64.89" cy="61.08" rx=".7" ry=".77"/>
     <ellipse class="cls-2" cx="49.77" cy="61.08" rx=".7" ry=".77"/>
     <ellipse id="_1" data-name="1" class="cls-115" cx="57.33" cy="61.08" rx="6.19" ry="6.81"/>
