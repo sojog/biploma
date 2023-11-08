@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text"></div>
+      </div>
+      <script src="textscramble.js"></script>
+      <nav>
+        <ul>
+            <li>
+                <a href="#student-login">Students</a>
+            </li>
+            <li>
+                <a href="#professor-login">Professors</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="student-login" class="grid-container">
+        <div class="login-form">
+            <h3>Student login</h3>
+            <label for="student-email">Email:</label>
+            <input type="email" id="student-email" required>
+            <label for="student-password">Password:</label>
+            <input type="password" id="student-password" required>
+            <button type="submit">Login</button>
+        </div>
+    </section>
+    <section id="professor-login" class="grid-container">
+        <div class="login-form">
+            <h3>Professor login</h3>
+            <label for="professor-email">Email:</label>
+            <input type="email" id="professor-email" required>
+            <label for="professor-password">Password:</label>
+            <input type="password" id="professor-password" required>
+            <button type="submit">Login</button>
+        </div>
+    </section>
+    <div id="contact" class="grid-container">
+        <div class="row">
+            <h1>Contact</h1>
+        </div>
+        <div class="row input-container">
+            <div class="col-xs-12">
+                <div class="styled-input wide">
+                    <input type="text" required />
+                    <label>Name</label> 
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="styled-input">
+                    <input type="text" required />
+                    <label>Email</label> 
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="styled-input" style="float:right;">
+                    <input type="text" required />
+                    <label>Phone Number</label> 
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="styled-input wide">
+                    <textarea required></textarea>
+                    <label>Message</label>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="btn-lrg submit-btn">Send Message</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>&copy;2023 Biploma. All rights reserved</p>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
