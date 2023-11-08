@@ -18,7 +18,7 @@ loginForm.addEventListener('submit', function (e) {
 
     if (user) {
         loginMessage.textContent = 'Login successful!';
-        // Poți redirecționa utilizatorul către pagina sa de student sau face alte acțiuni aici
+        // Redirecting users
     } else {
         loginMessage.textContent = 'Login failed. Please verify your login credentials';
     }
