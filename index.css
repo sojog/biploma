@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
 
 /* Color Variables */
 :root {
@@ -11,7 +11,6 @@
     --color-navbar-dark: #24262b;
     --color-bright-red: #e91e63;
 }
-
 
 * {
     margin: 0;
@@ -28,11 +27,39 @@ html {
     font-family: 'Poppins', Arial, sans-serif;
     background-color: var(--color-secondary-gray);
     line-height: 1.6;
-    height: 100svh;
+    height: 100vh;
 }
 
 a {
     text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.central-container .container,
+row,
+h1 {
+    text-align: center;
+    padding-top: 100px;
+    justify-content: space-around;
+}
+
+.central-container .container,
+h1 {
+    font-size: 2em;
+}
+
+.column {
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+
 }
 
 /* Particle Container Styles */
@@ -101,7 +128,6 @@ a {
     padding: 150px 0;
     text-align: center;
     background-size: cover;
-    background-color: var(--color-secondary-gray);
 }
 
 .feature-div {
@@ -117,7 +143,6 @@ a {
     padding: 50px;
     text-align: center;
     background-size: cover;
-    background-color: var(--color-secondary-gray);
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -582,26 +607,28 @@ a {
 }
 
 
-
 /* FOOTER */
-.container {
-    max-width: 1170px;
-    margin: auto;
+.footer {
+    background-color: var(--color-navbar-dark);
+    padding: 30px 0;
 }
 
-.row {
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.footer-row {
     display: flex;
     flex-wrap: wrap;
 }
 
-ul {
+.footer-col ul {
     list-style: none;
 }
 
-.footer {
-    background-color: #24262b;
-    padding: 50px 0 40px 0;
-}
+
 
 .footer-col {
     width: 25%;
@@ -610,7 +637,7 @@ ul {
 
 .footer-col h4 {
     font-size: 18px;
-    color: #ffffff;
+    color: var(--color-secondary-gray);
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -633,9 +660,10 @@ ul {
 }
 
 .footer-col ul li a {
+    padding-left: 0;
     font-size: 16px;
     text-transform: capitalize;
-    color: var(--color-accent-green);
+    color: var(--color-accent-gold);
     text-decoration: none;
     font-weight: 300;
     color: var(--color-secondary-gray);
@@ -652,12 +680,12 @@ ul {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--color-secondary-gray);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: var(--color-secondary-gray);
+    color: var(--color-bright-red);
     transition: all 0.5s ease;
 }
 
@@ -670,14 +698,11 @@ ul {
     text-align: center;
     padding-top: 30px;
     background-color: var(--color-footer-dark);
-    color: #fff;
+    color: var(--color-secondary-gray);
     font-size: 1em;
     border-top: 1px solid #444;
 }
 
-.container {
-    padding-bottom: 20px;
-}
 
 /*responsive*/
 @media(max-width: 767px) {
@@ -691,4 +716,269 @@ ul {
     .footer-col {
         width: 100%;
     }
+}
+
+
+/* Page Header Styles */
+.page-header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--color-secondary-gray);
+    color: var(--color-primary-blue);
+}
+
+.page-header h1 {
+    margin-bottom: 10px;
+    color: var(--color-primary-blue);
+}
+
+.page-header p {
+    font-size: 1.1em;
+    color: var(--color-secondary-silver);
+}
+
+/* Products Overview Section */
+.products-overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.products-overview article {
+    flex-basis: auto;
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.products-overview img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Feature Highlights Styles */
+.feature-highlights {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+    background: var(--color-secondary-gray);
+    text-align: center;
+}
+
+.feature-highlights div {
+    flex-basis: 30%;
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Call to Action Styles */
+.call-to-action {
+    background-color: var(--color-primary-blue);
+    color: var(--color-accent-gold);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    color: var(--color-accent-gold);
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    margin-bottom: 20px;
+    color: var(--color-secondary-gray);
+}
+
+.cta-button {
+    padding: 10px 30px;
+    background-color: var(--color-accent-green);
+    color: var(--color-primary-blue);
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--color-accent-gold);
+    transform: scale(1.05);
+}
+
+/* Responsive Styles for the Product Section */
+@media (max-width: 768px) {
+    .products-overview {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products-overview article {
+        flex-basis: 90%;
+    }
+
+    .feature-highlights {
+        flex-direction: column;
+    }
+
+    .feature-highlights div {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+}
+
+.certiblock-schools,
+.certiblock-organisations,
+.certiblock-individuals {
+    display: none;
+    padding: 20px;
+    border: var(--color-accent-gold) 2px solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+
+.certiblock-schools h2,
+.certiblock-organisations h2,
+.certiblock-individuals h2 {
+    color: var(--color-primary-blue);
+    margin-bottom: 15px;
+}
+
+.certiblock-schools h2,
+h1 {
+    text-align: left;
+}
+
+.school-categories article,
+.organisation-categories article,
+.individuals-categories article {
+    margin: 15px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.school-categories article h3,
+.organisation-categories article h3,
+.individuals-categories article h3 {
+    margin-bottom: 10px;
+}
+
+.certiblock-schools article {
+    flex-basis: 30%;
+    margin: 10px;
+    padding: 20px;
+    background: var(--color-secondary-silver);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.central-container {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.logo-container,
+h1 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+.logo-container p {
+    font-size: 0.5em;
+}
+
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.option-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-secondary-gray);
+    color: var(--color-primary-blue);
+    border: 2px solid var(--color-primary-blue);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.option-link:hover {
+    background-color: var(--color-primary-blue);
+    color: var(--color-accent-gold);
+}
+
+.certiblock-category {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--color-secondary-gray);
+    border-radius: 10px;
+}
+
+.certiblock-category article {
+    margin: 15px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certiblock-category article h3 {
+    margin-bottom: 10px;
+}
+
+
+.column .text-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.column .image-content {
+    padding: 10px;
+    max-width: 500px;
+    height: 300px;
+    width: 300px;
+}
+
+
+.certiblock-schools .image-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.certiblock-schools img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.visible {
+    display: block;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.connection-line {
+    position: absolute;
+    z-index: 1;
 }
