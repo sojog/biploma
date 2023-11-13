@@ -1,31 +1,10 @@
-//Wrapper section
-
-window.onscroll = function () {
-    scrollRotate();
-};
-
-function scrollRotate() {
-    let image1 = document.getElementById("reload1");
-    let image2 = document.getElementById("reload2");
-    let image3 = document.getElementById("reload3");
-    let rotation = window.scrollY / 30;
-image1.style.transform =
-    "translate(-50%, -50%) rotate(" + -rotation + "deg)";
-image2.style.transform =
-    "translate(-50%, -50%) rotate(" + rotation * 2 + "deg)";
-image3.style.transform =
-    "translate(-50%, -50%) rotate(" + -rotation * 3 + "deg)";
-}
-
-
 // Particle background
-
 let particles = [];
 
 function setup() {
   let canvas = createCanvas(windowWidth, windowHeight); // Set the height to match the viewport
-  canvas.parent('particle-container'); // This will attach the canvas to your div
-  let particlesLength = Math.min(windowWidth / 10, 100); // Adjust the density of the particles here
+  canvas.parent(document.querySelector('.particle-container'));
+  let particlesLength = Math.min(windowWidth / 3, 160); // Adjust the density of the particles here
   for (let i = 0; i < particlesLength; i++) {
     particles.push(new Particle());
   }
@@ -48,11 +27,12 @@ function draw() {
 class Particle {
   constructor() {
     this.pos = createVector(random(width), random(height));
-    this.vel = createVector(random(-0.5, 0.5), random(-0.3, 0.3));
+    this.vel = createVector(random(-0.1, 0.1), random(-0.3, 0.3));
     this.size = 10;
   }
 
   update() {
+    this.attractToMouse();
     this.pos.add(this.vel);
     this.edges();
   }
@@ -82,7 +62,38 @@ class Particle {
       }
     });
   }
+  attractToMouse() {
+    let mouse = createVector(mouseX, mouseY);
+    let dir = p5.Vector.sub(mouse, this.pos);
+    let d = dir.mag(); // Get the distance to the mouse
+
+    if (d < 50) { // Check if the distance is less than 50 pixels
+      dir.setMag(0.9); // Set speed
+      this.vel.lerp(dir, 0.6); // Adjust velocity towards the mouse
+    }
+  }
 }
+
+//Wrapper section
+
+window.onscroll = function () {
+    scrollRotate();
+};
+
+function scrollRotate() {
+    let image1 = document.getElementById("reload1");
+    let image2 = document.getElementById("reload2");
+    let image3 = document.getElementById("reload3");
+    let rotation = window.scrollY / 30;
+image1.style.transform =
+    "translate(-50%, -50%) rotate(" + -rotation + "deg)";
+image2.style.transform =
+    "translate(-50%, -50%) rotate(" + rotation * 2 + "deg)";
+image3.style.transform =
+    "translate(-50%, -50%) rotate(" + -rotation * 3 + "deg)";
+}
+
+
 
 
 // JavaScript to toggle the menu
@@ -137,3 +148,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
