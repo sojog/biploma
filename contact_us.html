@@ -34,18 +34,36 @@
         </ul>
     </nav>
     <!-- First Section On Screen-->
-    <section class="top-container">
-        <div class="container">
-            <div class="row">
+    <section class="sales-person">
+        <div id="sales-container">
+            <div id="sales-row">
                 <h1>Contact Us</h1>
-                <h3>Decentralized Verification</h3>
-                <p>Employers can verify diplomas without relying on a central authority.
-                </p>
-                <h3>Enhanced Security</h3>
-                <p>All data on the blockchain is encrypted ensuring maximum security.</p>
-                <h3>Integration Capabilities</h3>
-                <p>APIs available for institutions to integrate with their existing systems.
-                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="contact-row">
+            <div class="column left">
+                <h2>Contact Information</h2>
+                <p>Feel free to get in touch with us...</p>
+            </div>
+            <div class="column right">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
@@ -73,11 +91,11 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>prices</h4>
+                    <h4>pricing</h4>
                     <ul>
-                        <li><a href="#">premiums</a></li>
-                        <li><a href="#">tiers</a></li>
-                        <li><a href="#">securities</a></li>
+                        <li><a href="#">for institutions</a></li>
+                        <li><a href="#">for individuals</a></li>
+                        <li><a href="#">for employers</a></li>
                         <li><a href="#">guarantees</a></li>
                     </ul>
                 </div>
@@ -96,6 +114,8 @@
             <p>©2023 Certiblock<span id="tm-symbol">™</span> All rights reserved.</p>
         </div>
     </footer>
+    <script src="home.js"></script>
+
 </body>
 
 </html>

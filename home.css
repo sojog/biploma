@@ -1,4 +1,5 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+/* @import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"; */
+@import "https://fonts.googleapis.com/css?family=Montserrat";
 
 
 /* References: */
@@ -28,7 +29,9 @@ body,
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', Arial, sans-serif;
+    /* font-family: 'Poppins', Arial, sans-serif; */
+    font-family: 'Montserrat';
+    font-size: 17px;
     background-color: var(--color-secondary-gray);
     line-height: 1.6;
     height: 100vh;
@@ -38,8 +41,7 @@ html {
 .top-container {
     text-align: center;
     background-size: cover;
-    margin-top: 87px;
-    background-color: #00FF00;
+    margin-top: 77px;
 }
 
 .container {
@@ -48,7 +50,6 @@ html {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    background-color: #29ABE2;
 }
 
 .container row {
@@ -60,6 +61,146 @@ html {
 
 .container h1 {
     font-size: 2em;
+}
+
+.sales-person {
+    margin-top: 77px;
+    display: flex;
+    background-image: linear-gradient(to right, rgba(0, 51, 102, 0.5) 50%, rgba(41, 71, 226, 0.5) 100%), url("images/contact-salesman.png");
+    height: 60vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+#sales-row {
+    padding: 2.5vw;
+    align-items: center;
+}
+
+#sales-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#sales-row h1 {
+    font-size: 3vw;
+    font-weight: bold;
+    color: var(--color-secondary-gray);
+    text-align: center;
+}
+
+
+
+/* Sales Responsive Styles */
+@media (max-width: 768px) {
+    #sales-row {
+        padding: 10vw;
+    }
+
+    #sales-row h1 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #sales-row h1 {
+        font-size: 6vw;
+    }
+
+    .sales-person {
+        height: 200px;
+        /* margin-top: 79px; */
+    }
+}
+
+/* __________________________________________________________ */
+/* Contact Us Section */
+
+.contact-form-section {
+    margin: 0 auto;
+    padding: 100px 40px;
+    background-color: var(--color-secondary-gray);
+}
+
+.contact-row {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.column.right {
+    background-color: var(--color-secondary-gray);
+    box-shadow: 0 4px 8px rgba(213, 41, 41, 0.1);
+}
+
+#contactForm {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#contactForm button {
+    max-width: 50%;
+    align-self: center;
+    padding: 15px 20px;
+    background-color: var(--color-accent-gold);
+    color: var(--color-navbar-dark);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(213, 41, 41, 0.1);
+}
+
+#contactForm button:hover {
+    background-color: var(--color-accent-green);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-row {
+        flex-direction: column;
+    }
+
+    #contactForm {
+        max-width: 100%;
+    }
 }
 
 /* __________________________________________________________ */
@@ -101,7 +242,7 @@ html {
 }
 
 #terms a {
-    color: var(--color-secondary-teal);
+    /* color: var(--color-secondary-teal); */
     text-decoration: none;
 }
 
@@ -151,7 +292,7 @@ html {
     height: 100vh;
     overflow: hidden;
     z-index: 1;
-    margin-top: 87px;
+    margin-top: 77px;
 }
 
 /* Hero Section Styles */
@@ -480,12 +621,20 @@ html {
     border-radius: 5px;
     text-decoration: none;
     margin-top: 20px;
+    font-weight: bold;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .contact-button:hover {
     background-color: var(--color-accent-green);
     transform: scale(1.05);
+}
+
+.email-contact,
+.phone-contact,
+.address-contact {
+    color: inherit;
+    text-decoration: none;
 }
 
 /* __________________________________________________________ */
@@ -500,7 +649,7 @@ html {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(36, 38, 43, 0.9);
-    padding: 10px;
+    padding-right: 10px;
     color: white;
     box-sizing: border-box;
 }
@@ -514,8 +663,7 @@ html {
 .brand-logo img {
     width: 60px;
     height: 60px;
-    padding-top: 10px;
-    padding-right: 10px;
+    margin: 5px 10px 5px 10px;
 }
 
 .brand-link {
@@ -576,15 +724,16 @@ html {
         height: 100vh;
         flex-direction: column;
         background-color: rgba(36, 38, 43, 0.9);
-        width: 22%;
+        width: 20%;
         transform: translateX(100%);
         transition: transform 0.3s ease;
         z-index: 999;
+        padding-right: 10px;
     }
 
     .navbar-links.change {
         transform: translateX(0);
-        padding-top: 30px;
+        padding-top: 60px;
     }
 
     .navbar-links li {
@@ -614,19 +763,14 @@ html {
 }
 
 @media screen and (max-width: 480px) {
-    .unique-navbar {
-        padding: 10px 15px;
-        /* Adjust padding for smaller screens */
-    }
-
     .brand-logo a {
-        font-size: 1.2em;
+        font-size: 1em;
         /* Adjust font size for smaller screens */
     }
 
     .navbar-links {
-        width: 33%;
-        padding-top: 30px;
+        width: 30%;
+        padding: 40px 20px 0px 10px;
         transform: translateX(100%);
     }
 
