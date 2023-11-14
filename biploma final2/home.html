@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Biploma</title>
+</head>
+<body>
+    <header>
+        <h1>Biploma</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#cursuri">Cursuri</a>
+            </li>
+            <li>
+                <a href="#student-login">Studenți</a>
+            </li>
+            <li>
+                <a href="#professor-login">Profesori</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="cursuri">
+        <h2>Cursuri</h2>
+        <div class="cursuri">
+         
+        </div>
+    </section>
+    <section id="student-login">
+        <h2>Studenți</h2>
+        <form id="student-login-form" class="login-form">
+            <h3>Autentificare Studenți</h3>
+            <label for="student-email">Adresă de email:</label>
+            <input type="email" id="student-email" required>
+            <label for="student-password">Parolă:</label>
+            <input type="password" id="student-password" required>
+            <button type="submit">Autentificare</button>
+        </form>
+        <p id="student-login-message"></p>
+    </section>
+    <section id="professor-login">
+        <h2>Profesori</h2>
+        <form id="professor-login-form" class="login-form">
+            <h3>Autentificare Profesori</h3>
+            <label for="professor-email">Adresă de email:</label>
+            <input type="email" id="professor-email" required>
+            <label for="professor-password">Parolă:</label>
+            <input type="password" id="professor-password" required>
+            <button type="submit">Autentificare</button>
+        </form>
+        <p id="professor-login-message"></p>
+    </section>
+    <header class="headerTop">
+      <div class="headerContact">
+        <span>
+          <i class="fas fa-phone"></i><a href="tel:074xxxxxxx">074xxxxxxx</a>
+        </span>
+        <span>
+          <i class="fas fa-envelope"></i><a href="email:Biploma@yahoo.com">Biploma@yahoo.com</a>
+        </span>
+      </div>
+      <div class="headerSocial">
+        <a href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </header>
+    <header class="header">
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  <section id="contact">
+    <div class="contact-section">
+      <h2>Contact</h2>
+      <button class="toggle-button" onclick="toggleContent()">Arată Detalii</button>
+      <div id="hidden-content" class="hidden-content">
+          <div class="form-section">
+              <label for="name">Nume:</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-section">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-section">
+              <label for="message">Mesaj:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Trimite Mesaj</button>
+      </div>
+  </div>
+  
+  </section>
+
+  <section id="chat">
+    <h2>Chat</h2>
+    <div id="chat-container" class="chat-container">
+        <!-- Aici vor apărea întrebările și răspunsurile -->
+        <div class="question-item" onclick="getBotResponse(this)">
+            Întrebare 1: Ce este Biploma?
+        </div>
+        <div class="question-item" onclick="getBotResponse(this)">
+            Întrebare 2: Cum mă pot înscrie la un curs?
+        </div>
+        <div class="question-item" onclick="getBotResponse(this)">
+            Întrebare 3: Care sunt avantajele Biploma?
+        </div>
+    </div>
+</section>
+    
+
+
+
+
+
+
+  <div class="footer">
+      <div class="container">
+          <p>&copy;2023 Biploma.</p>
+      </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
