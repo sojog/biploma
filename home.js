@@ -2,17 +2,16 @@
 let particles = [];
 
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight); // Set the height to match the viewport
+  let canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent(document.querySelector('.particle-container'));
-  let particlesLength = Math.min(windowWidth / 3, 160); // Adjust the density of the particles here
+  let particlesLength = Math.min(windowWidth / 3, 160);
   for (let i = 0; i < particlesLength; i++) {
     particles.push(new Particle());
   }
 }
 
-
-  function windowResized() {
-    resizeCanvas(windowWidth, windowHeight); // Resize the canvas when the window is resized
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -62,39 +61,44 @@ class Particle {
       }
     });
   }
+
   attractToMouse() {
     let mouse = createVector(mouseX, mouseY);
     let dir = p5.Vector.sub(mouse, this.pos);
-    let d = dir.mag(); // Get the distance to the mouse
-
-    if (d < 50) { // Check if the distance is less than 50 pixels
-      dir.setMag(0.9); // Set speed
-      this.vel.lerp(dir, 0.6); // Adjust velocity towards the mouse
+    let d = dir.mag();
+    if (d < 50) {
+      dir.setMag(0.9);
+      this.vel.lerp(dir, 0.6);
     }
   }
 }
 
-//Wrapper section
-
-window.onscroll = function () {
-    scrollRotate();
-};
-
+// Wrapper section
 function scrollRotate() {
-    let image1 = document.getElementById("reload1");
-    let image2 = document.getElementById("reload2");
-    let image3 = document.getElementById("reload3");
-    let rotation = window.scrollY / 30;
-image1.style.transform =
-    "translate(-50%, -50%) rotate(" + -rotation + "deg)";
-image2.style.transform =
-    "translate(-50%, -50%) rotate(" + rotation * 2 + "deg)";
-image3.style.transform =
-    "translate(-50%, -50%) rotate(" + -rotation * 3 + "deg)";
+  let image1 = document.getElementById("reload1");
+  let image2 = document.getElementById("reload2");
+  let image3 = document.getElementById("reload3");
+  let rotation = window.scrollY / 30;
+  image1.style.transform = "translate(-50%, -50%) rotate(" + -rotation + "deg)";
+  image2.style.transform = "translate(-50%, -50%) rotate(" + rotation * 2 + "deg)";
+  image3.style.transform = "translate(-50%, -50%) rotate(" + -rotation * 3 + "deg)";
 }
 
+// Define toTopScrollFunction outside the IIFE
+function toTopScrollFunction() {
+  let mybutton = document.getElementById("toTopBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+  } else {
+      mybutton.style.display = "none";
+  }
+}
 
-
+// Single window.onscroll event handler
+window.onscroll = function() {
+  toTopScrollFunction();
+  scrollRotate();
+};
 
 // JavaScript to toggle the menu
 function toggleMenu() {
@@ -113,39 +117,80 @@ document.querySelectorAll('.navbar-links a').forEach(link => {
   });
 });
 
-
 // Wait for the DOM to load
 document.addEventListener('DOMContentLoaded', function () {
   const optionLinks = document.querySelectorAll('.option-link');
-
   optionLinks.forEach(link => {
     link.addEventListener('click', function () {
-      // Remove any existing lines from the document
       const existingLines = document.querySelectorAll('.connection-line');
       existingLines.forEach(line => line.remove());
 
-      // Hide all sections
       const sections = document.querySelectorAll('.certiblock-schools, .certiblock-organisations, .certiblock-individuals');
       sections.forEach(section => section.classList.remove('visible'));
 
-      // Show the clicked section
       const target = this.getAttribute('data-target');
       const targetSection = document.getElementById(target) || document.querySelector('.' + target);
       targetSection.classList.add('visible');
 
-      // Add a line connecting the link to the section if it is not already visible
       if (!targetSection.querySelector('.connection-line')) {
         const line = document.createElement('div');
         line.className = 'connection-line';
         line.style.position = 'absolute';
-        line.style.top = this.offsetTop + this.offsetHeight + 'px'; // Position at the bottom of the link
-        line.style.left = this.offsetLeft + (this.offsetWidth / 2) + 'px'; // Center horizontally
-        line.style.width = '2px'; // Line thickness
-        line.style.height = (targetSection.offsetTop - this.offsetTop - this.offsetHeight) + 'px'; // Line height
-        line.style.backgroundColor = 'var(--color-accent-gold)'; // Line color
-        document.body.appendChild(line); // Add the line to the body
+        line.style.top = this.offsetTop + this.offsetHeight + 'px';
+        line.style.left = this.offsetLeft + (this.offsetWidth / 2) + 'px';
+        line.style.width = '2px';
+        line.style.height = (targetSection.offsetTop - this.offsetTop - this.offsetHeight) + 'px';
+        line.style.backgroundColor = 'var(--color-accent-gold)';
+        document.body.appendChild(line);
       }
     });
   });
 });
 
+function revealNumber(event, element) {
+  if (!element.classList.contains('revealed')) {
+      event.preventDefault();
+      element.classList.add('revealed');
+  }
+}
+
+// To Top arrow
+(function() {
+  var css = `
+      #toTopBtn {
+          position: fixed;
+          bottom: 20px;
+          right: 30px;
+          z-index: 99;
+          font-size: 22px;
+          font-weight: bold;
+          border: none;
+          outline: none;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: var(--color-accent-gold);
+          cursor: pointer;
+          padding: 5px 12px 5px 12px;
+          border-radius: 10px;
+          display: none;
+      }
+      #toTopBtn:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+      }
+  `;
+
+  var styleSheet = document.createElement("style");
+  styleSheet.type = "text/css";
+  styleSheet.innerText = css;
+  document.head.appendChild(styleSheet);
+
+  var button = document.createElement("button");
+  button.id = "toTopBtn";
+  button.title = "Go to top";
+  button.innerHTML = "↑";
+  document.body.appendChild(button);
+
+  button.onclick = function() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  };
+})();

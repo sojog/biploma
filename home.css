@@ -657,6 +657,28 @@ html {
     text-decoration: none;
 }
 
+
+.hide-phone-number {
+    display: inline-block;
+    font-family: monospace, monospace;
+    position: relative;
+    cursor: pointer;
+}
+
+.hide-phone-number::after {
+    content: "XXXX-XXX";
+    background: var(--color-secondary-gray);
+    position: absolute;
+    right: 0;
+    left: 34px;
+    /* Adjust as needed to cover the right part of the number */
+}
+
+.hide-phone-number.revealed::after {
+    content: "";
+
+}
+
 /* __________________________________________________________ */
 /* NAVBAR SECTION START */
 
@@ -877,7 +899,7 @@ html {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: var(--color-bright-red);
+    background-color: var(--color-accent-gold);
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -912,17 +934,18 @@ html {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: var(--color-secondary-gray);
+    background-color: transparent;
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: var(--color-bright-red);
+    border: var(--color-accent-gold) solid 1px;
+    color: var(--color-accent-gold);
     transition: all 0.5s ease;
 }
 
 .footer-col .social-links a:hover {
-    color: var(--color-bright-red);
+    color: var(--color-primary-blue);
     background-color: var(--color-accent-gold);
     transform: scale(1.4);
 }
