@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "practica.css">
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <div class = "page_header">Biploma</div>
+        <div class = "navigation_bar">
+            <div class = "navigation_bar_left">
+                <a href = "index.html">Home</a>
+            </div>
+            <div class = "navigation_bar_right">
+                <a href = "login.html">Login</a>
+                <a href = "signin.html">Sign In</a>
+            </div>
+        </div>
+        <div class = "login_signin_form">
+            <h2>Sign In</h2>
+            <form action = "logged_in_index.html" method="post">
+                <label for = "email">Email:</label>
+                <input type = "email" id = "email" name = "email" required>
+    
+                <label for = "username">Username:</label>
+                <input type = "text" id = "username" name = "username" required>
+
+                <div class="account_type">
+                    <input type="radio" id="student" name="account_type" value="Student">
+                    <label for="student">Student</label>
+                    
+                    <input type="radio" id="teacher" name="account_type" value="Teacher">
+                    <label for="teacher">Teacher</label>
+                </div>
+    
+                <label for = "password">Password:</label>
+                <input type = "password" id = "password" name = "password" required>
+    
+                <label for = "repeat_password">Repeat Password:</label>
+                <input type = "password" id = "repeat_password" name = "repeat_password" required>
+    
+                <button type = "submit">Sign In</button>
+            </form>
+        </div>
+    </body>
+</html>

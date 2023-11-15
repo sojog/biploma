@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="practica.css">
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <div class = "page_header">Biploma</div>
+        <div class = "navigation_bar">
+            <div class = "navigation_bar_left">
+                <a href = "logged_in_index.html">Home</a>
+                <a href = "my_documents.html">My Documents</a>
+            </div>
+            <div class = "navigation_bar_right">
+                <a href = "index.html">Logout</a>
+            </div>
+        </div>
+        <div class = "home_content">
+            <div class = "home_content_title">Create New Document</div>
+            <div class = "login_signin_form">
+                <form action = "logged_in_index.html" method="post">
+                    <label for = "document_name">Document Name:</label>
+                    <input type = "text" id = "document_name" name = "document_name" required>
+        
+                    <label for = "document_content">Select Document:</label>
+                    <input type = "text" id = "document_content" name = "document_content" required>
+        
+                    <button type = "submit">Create</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
