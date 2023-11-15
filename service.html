@@ -13,26 +13,7 @@
 
 <body>
     <!-- Navbar section -->
-    <nav class="unique-navbar">
-        <div class="brand-logo">
-            <a href="home.html"><img src="images/color_yellow.png" alt="Certiblock Logo" /></a>
-            <h1>
-                <a href="home.html" class="brand-link">Certiblock</a><span id="tm-symbol">™</span>
-            </h1>
-        </div>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="menu-line line1"></div>
-            <div class="menu-line line2"></div>
-            <div class="menu-line line3"></div>
-        </div>
-        <ul class="navbar-links">
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="product.html">PRODUCTS</a></li>
-            <li><a href="service.html">SERVICES</a></li>
-            <li><a href="about_us.html">ABOUT US</a></li>
-            <li><a href="contact_us.html">CONTACT</a></li>
-        </ul>
-    </nav>
+    <div id="navbar-placeholder"></div>
 
     <!-- First Section On Screen-->
     <section class="top-container">
@@ -52,51 +33,21 @@
     </section>
 
     <!-- Footer section -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-row">
-                <div class="footer-col">
-                    <h4>company</h4>
-                    <ul>
-                        <li><a href="service.html">our services</a></li>
-                        <li><a href="terms.html">terms and conditions</a></li>
-                        <li><a href="privacy_policy.html">privacy policy</a></li>
-                        <li><a href="#">affiliate program</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>get help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">shipping</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">media</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>pricing</h4>
-                    <ul>
-                        <li><a href="#">for institutions</a></li>
-                        <li><a href="#">for individuals</a></li>
-                        <li><a href="#">for employers</a></li>
-                        <li><a href="#">guarantees</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-footer">
-            <p>©2023 Certiblock<span id="tm-symbol">™</span> All rights reserved.</p>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
+
+    <!-- Script section -->
+    <script>
+        // Fetch and load the footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(text => document.getElementById('footer-placeholder').innerHTML = text);
+
+        // Fetch and load the navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(text => document.getElementById('navbar-placeholder').innerHTML = text);
+    </script>
+
     <script src="home.js"></script>
 </body>
 

@@ -1,4 +1,4 @@
-/* @import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"; */
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
 @import "https://fonts.googleapis.com/css?family=Montserrat";
 
 
@@ -30,7 +30,8 @@ html {
     margin: 0;
     padding: 0;
     /* font-family: 'Poppins', Arial, sans-serif; */
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
+    font-family: 'Roboto';
     font-size: 17px;
     background-color: var(--color-secondary-gray);
     line-height: 1.6;
@@ -66,7 +67,7 @@ html {
 .sales-person {
     margin-top: 77px;
     display: flex;
-    background-image: linear-gradient(to right, rgba(0, 51, 102, 0.5) 50%, rgba(41, 71, 226, 0.5) 100%), url("images/contact-salesman.png");
+    background-image: linear-gradient(to right, rgba(0, 51, 102, 0.5) 50%, rgba(41, 71, 226, 0.5) 100%), url("../images/contact-salesman.png");
     height: 60vh;
     width: 100vw;
     background-repeat: no-repeat;
@@ -141,7 +142,15 @@ html {
 
 .column.right {
     background-color: var(--color-secondary-gray);
-    box-shadow: 0 4px 8px rgba(213, 41, 41, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.column.left {
+    padding-right: 50px;
+}
+
+.column.left h1 {
+    font-size: 2em;
 }
 
 #contactForm {
@@ -165,7 +174,7 @@ html {
 .form-group textarea {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #777272;
     border-radius: 4px;
 }
 
@@ -185,7 +194,7 @@ html {
     cursor: pointer;
     font-size: 0.8em;
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(213, 41, 41, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #contactForm button:hover {
@@ -200,6 +209,13 @@ html {
 
     #contactForm {
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .column.left h1 {
+        font-size: 1.7em;
     }
 }
 
@@ -265,13 +281,17 @@ html {
 /* Terms Responsive Styles */
 @media screen and (max-width: 768px) {
     #terms {
-        margin: 20px;
+        padding: 40px;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .terms-container {
+        padding: 20px;
+    }
+
     #terms {
-        margin: 10px;
+        padding: 10px;
     }
 
     #terms h2 {
@@ -933,7 +953,14 @@ html {
 
 /* FOOTER SECTION END*/
 /* __________________________________________________________ */
+/* Miscelaneous */
+.nowrap {
+    white-space: nowrap;
+}
 
-
-
-/* __________________________________________________________ */
+.form-group .subtitle {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.8em;
+    color: #666;
+}

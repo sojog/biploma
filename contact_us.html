@@ -2,120 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="blockchain, diploma, certificate, technology, verified, certiblock" />
-    <title>Contact Us</title>
-    <link href="home.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="blockchain, diploma, certificate, technology, verified, certiblock" />
+  <title>Contact Us</title>
+  <link href="home.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
 
 <body>
-    <!-- Navbar section -->
-    <nav class="unique-navbar">
-        <div class="brand-logo">
-            <a href="home.html"><img src="images/color_yellow.png" alt="Certiblock Logo" /></a>
-            <h1>
-                <a href="home.html" class="brand-link">Certiblock</a><span id="tm-symbol">™</span>
-            </h1>
-        </div>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="menu-line line1"></div>
-            <div class="menu-line line2"></div>
-            <div class="menu-line line3"></div>
-        </div>
-        <ul class="navbar-links">
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="product.html">PRODUCTS</a></li>
-            <li><a href="service.html">SERVICES</a></li>
-            <li><a href="about_us.html">ABOUT US</a></li>
-            <li><a href="contact_us.html">CONTACT</a></li>
-        </ul>
-    </nav>
-    <!-- First Section On Screen-->
-    <section class="sales-person">
-        <div id="sales-container">
-            <div id="sales-row">
-                <h1>Contact Us</h1>
-            </div>
-        </div>
-    </section>
+  <!-- Navbar section -->
+  <div id="navbar-placeholder"></div>
 
-    <section class="contact-form-section">
-        <div class="contact-row">
-            <div class="column left">
-                <h2>Contact Information</h2>
-                <p>Feel free to get in touch with us...</p>
-            </div>
-            <div class="column right">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Your name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+  <!-- First Section On Screen-->
+  <section class="sales-person">
+    <div id="sales-container">
+      <div id="sales-row">
+        <h1>Contact Us</h1>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer section -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-row">
-                <div class="footer-col">
-                    <h4>company</h4>
-                    <ul>
-                        <li><a href="service.html">our services</a></li>
-                        <li><a href="terms.html">terms and conditions</a></li>
-                        <li><a href="privacy_policy.html">privacy policy</a></li>
-                        <li><a href="#">affiliate program</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>get help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">shipping</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">media</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>pricing</h4>
-                    <ul>
-                        <li><a href="#">for institutions</a></li>
-                        <li><a href="#">for individuals</a></li>
-                        <li><a href="#">for employers</a></li>
-                        <li><a href="#">guarantees</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-footer">
-            <p>©2023 Certiblock<span id="tm-symbol">™</span> All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="home.js"></script>
+  <!-- Contact Form Section -->
+  <section class="contact-form-section">
+    <div class="contact-row">
+      <div class="column left">
+        <h1>Get in touch with our <span class="nowrap">creator-friendly</span> support team</h1>
+        <br>
+        <br>
+        <p>Our business hours are 9AM-6PM EET Monday-Friday.</p>
+      </div>
 
+      <div class="column right">
+        <form id="contactForm" action="/submit_contact_form" method="POST">
+          <div class="form-group">
+            <label for="name">Your Preferred Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Digital Mailbox:</label>
+            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message to Us:</label>
+            <textarea id="message" name="message" required maxlength="1000"
+              placeholder="Your message here ..."></textarea>
+          </div>
+
+          <!-- Honeypot Field (Invisible to users) -->
+          <div style="display:none;">
+            <label for="honeypot">Do not fill this field if you're human:</label>
+            <input type="text" id="honeypot" name="honeypot" />
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer section -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Script section -->
+  <script>
+    // Fetch and load the footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(text => document.getElementById('footer-placeholder').innerHTML = text);
+
+    // Fetch and load the navbar
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(text => document.getElementById('navbar-placeholder').innerHTML = text);
+  </script>
+  <script>
+    document.getElementById('contactForm').onsubmit = function (e) {
+      // Check if honeypot field is filled out, indicating it's likely spam
+      if (document.getElementById('honeypot').value !== '') {
+        // If the honeypot is filled, prevent the form from submitting
+        e.preventDefault();
+        console.log('Spam detected, form not submitted.');
+        // Optionally, you can alert the user or log this attempt somewhere
+      }
+    };
+  </script>
+
+  <script src="home.js"></script>
 </body>
 
 </html>
