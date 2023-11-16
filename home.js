@@ -172,11 +172,13 @@ function revealNumber(event, element) {
           padding: 5px 12px 5px 12px;
           border-radius: 10px;
           display: none;
+          border: var(--color-accent-gold) solid 1px;
       }
       #toTopBtn:hover {
           background-color: rgba(0, 0, 0, 0.8);
       }
   `;
+
 
   var styleSheet = document.createElement("style");
   styleSheet.type = "text/css";
