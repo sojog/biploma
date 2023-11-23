@@ -197,98 +197,101 @@ function revealNumber(event, element) {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
   };
-});
+})();
 
 
-// Login page section
-document.addEventListener("DOMContentLoaded", function () {
-  var loginForm = document.getElementById("loginForm");
-  var createAccount = document.getElementById("createAccount");
-});
-// Event listener for the login form
-loginForm.addEventListener("submit", function (e) {
-  e.preventDefault();
 
-  var username = loginForm.elements["username"].value;
-  var password = loginForm.elements["password"].value;
+    document.addEventListener("DOMContentLoaded", function () {
+        var loginForm = document.getElementById("loginForm");
+        var createAccount = document.getElementById("createAccount");
+    });
+    // Event listener for the login form
+    loginForm.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-  fetch('/login', {
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-          username: username,
-          password: password
-      })
-  })
-      .then(response => response.json())
-      .then(data => {
-          // Handle response here
-          console.log(data);
-          if (data.success) {
-              // Redirect or update UI on successful login
-              window.location.href = 'static/test.html'; // Example redirection
-          } else {
-              // Show error message
-              alert("Login failed: " + data.message);
-          }
-      })
-      .catch(error => {
-          console.error('Error:', error);
-      });
-});
+        var username = loginForm.elements["username"].value;
+        var password = loginForm.elements["password"].value;
 
-// Event listener for the sign-up form
-createAccount.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  var formData = new FormData(createAccount);
-  var object = {};
-  formData.forEach(function (value, key) {
-      object[key] = value;
-  });
-  var json = JSON.stringify(object);
-
-  fetch('/signup', {
-      method: 'POST',
-      headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-      },
-      body: json
-  })
-      .then(response => response.json())
-      .then(data => {
-          console.log(data);
-          if (data.success) {
-              window.location.href = 'static/test.html';
-          } else {
-              alert("Sign up failed: " + data.message);
-          }
-      })
-      .catch(error => {
-          console.error('Error:', error);
-      });
-});
+        fetch('/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: username,
+                password: password
+            })
+        })
+            .then(response => response.json())
+            .then(data => {
+                // Handle response here
+                console.log(data);
+                if (data.success) {
+                    // Redirect or update UI on successful login
+                    window.location.href = 'static/test.html'; // Example redirection
+                } else {
+                    // Show error message
+                    alert("Login failed: " + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
 
 
-// Corrected event listener for showing/hiding the signup form
-document.getElementById("linkCreateAccount").addEventListener("click", function (e) {
-  e.preventDefault();
-  var loginForm = document.getElementById("loginForm");
-  var createAccount = document.getElementById("createAccount");
+    // Login form section
+    // Event listener for the sign-up form
+    createAccount.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-  loginForm.classList.add("form--hidden");
-  createAccount.classList.remove("form--hidden");
-});
+        var formData = new FormData(createAccount);
+        var object = {};
+        formData.forEach(function (value, key) {
+            object[key] = value;
+        });
+        var json = JSON.stringify(object);
 
-// Event listener for showing/hiding the login form
-document.getElementById("linkLogin").addEventListener("click", function (e) {
-  e.preventDefault();
-  var loginForm = document.getElementById("loginForm");
-  var createAccount = document.getElementById("createAccount");
+        fetch('/signup', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: json
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                if (data.success) {
+                    window.location.href = 'static/test.html';
+                } else {
+                    alert("Sign up failed: " + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
 
-  loginForm.classList.remove("form--hidden");
-  createAccount.classList.add("form--hidden");
-});
+
+    // Corrected event listener for showing/hiding the signup form
+    document.getElementById("linkCreateAccount").addEventListener("click", function (e) {
+        e.preventDefault();
+        var loginForm = document.getElementById("loginForm");
+        var createAccount = document.getElementById("createAccount");
+
+        loginForm.classList.add("form--hidden");
+        createAccount.classList.remove("form--hidden");
+    });
+
+    // Event listener for showing/hiding the login form
+    document.getElementById("linkLogin").addEventListener("click", function (e) {
+        e.preventDefault();
+        var loginForm = document.getElementById("loginForm");
+        var createAccount = document.getElementById("createAccount");
+
+        loginForm.classList.remove("form--hidden");
+        createAccount.classList.add("form--hidden");
+
+    });

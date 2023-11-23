@@ -1223,14 +1223,17 @@ h3 {
 /* __________________________________________________________ */
 /* Login Page Section */
 
-.login-container {
+.toop-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 500px;
-    max-width: 500px;
-    margin: 5rem;
+    height: 80vh;
+}
+
+.login-container {
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
     padding: 2rem;
     padding-bottom: 50px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
@@ -1242,13 +1245,7 @@ h3 {
 .form__input,
 .form__button {
     font: 500 1rem 'Roboto', sans-serif;
-    width: 100%;
 }
-
-#createAccount .form__input {
-    width: 100%;
-}
-
 
 .form--hidden {
     display: none;
@@ -1315,7 +1312,6 @@ h3 {
 .form__button {
     width: 100%;
     padding: 1rem 2rem;
-    margin-bottom: 10px;
     font-weight: bold;
     font-size: 1.1rem;
     color: #ffffff;
@@ -1344,7 +1340,6 @@ h3 {
 }
 
 .form__link {
-    margin-top: 30px;
     color: var(--color-secondary-silver);
     text-decoration: none;
     cursor: pointer;
