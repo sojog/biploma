@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords" content="blockchain, diploma, certificate, technology, verified, certiblock" />
   <title>Certiblock - Blockchain Certified Diplomas</title>
-  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}"> -->
+  <link href="home.css" type="text/css" rel="stylesheet" />
   <link href="home.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
@@ -15,20 +15,43 @@
 
 <body>
   <!-- Navbar section -->
-  <div id="navbar-placeholder"></div>
+  <header class="unique-navbar">
+    <div class="brand-logo">
+      <a href="home.html"><img src="images/logo_yellow.png" alt="Certiblock Logo" class="navbar-logo" /></a>
+      <a href="home.html" class="brand-link">CΞRTIBLOCK<span id="tm-symbol">™</span></a>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="menu-line line1"></div>
+      <div class="menu-line line2"></div>
+      <div class="menu-line line3"></div>
+    </div>
+    <nav>
+      <ul class="navbar-links">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="about_us.html">ABOUT</a></li>
+        <li><a href="contact_us.html">CONTACT</a></li>
+        <li><a href="new_login.html" class="button-nav">LOGIN</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Hero Section with Particle Background -->
   <section class="particle-container">
     <div id="hero-home">
       <div id="hero-text">
         <h1>Innovative Blockchain Technology For<br />Certified Diplomas</h1>
+        <br>
         <p>Revolutionizing the way we trust educational certificates.</p>
         <p>
-          Our blockchain-based system ensures that diplomas and certificates
+          Our blockchain-based system ensures that diplomas and certificates<br />
           are tamper-proof, verifiable, and globally accessible. Join the
           future of education today.
         </p>
-        <a href="contact_us.html" class="contact-button">Contact Us</a>
+        <br>
+        <br>
+        <a href="contact_us.html" class="button-3">Contact Us</a>
       </div>
     </div>
   </section>
@@ -138,22 +161,54 @@
   </section>
 
   <!-- Footer section -->
-  <div id="footer-placeholder"></div>
-
-  <!-- Script section -->
-  <script>
-    // Fetch and load the footer
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(text => document.getElementById('footer-placeholder').innerHTML = text);
-
-    // Fetch and load the navbar
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(text => document.getElementById('navbar-placeholder').innerHTML = text);
-  </script>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="service.html">our services</a></li>
+            <li><a href="terms.html">terms and conditions</a></li>
+            <li><a href="privacy_policy.html">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="theme_mode_2.html">dark theme</a></li>
+            <li><a href="#">login</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>pricing</h4>
+          <ul>
+            <li><a href="#">for institutions</a></li>
+            <li><a href="#">for individuals</a></li>
+            <li><a href="#">for employers</a></li>
+            <li><a href="#">guarantees</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-footer">
+      ©2023 CΞRTIBLOCK<span id="tm-symbol">™</span>. All rights reserved.
+    </div>
+  </footer>
 
   <script src="home.js"></script>
+
 </body>
 
 </html>

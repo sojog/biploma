@@ -79,26 +79,17 @@ function scrollRotate() {
   let image2 = document.getElementById("reload2");
   let image3 = document.getElementById("reload3");
   let rotation = window.scrollY / 30;
-  image1.style.transform = "translate(-50%, -50%) rotate(" + -rotation + "deg)";
-  image2.style.transform = "translate(-50%, -50%) rotate(" + rotation * 2 + "deg)";
-  image3.style.transform = "translate(-50%, -50%) rotate(" + -rotation * 3 + "deg)";
-}
 
-// Define toTopScrollFunction outside the IIFE
-function toTopScrollFunction() {
-  let mybutton = document.getElementById("toTopBtn");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-  } else {
-      mybutton.style.display = "none";
+  if (image1 && image2 && image3) {
+    let rotation = window.scrollY / 30;
+    image1.style.transform = "translate(-50%, -50%) rotate(" + -rotation + "deg)";
+    image2.style.transform = "translate(-50%, -50%) rotate(" + rotation * 2 + "deg)";
+    image3.style.transform = "translate(-50%, -50%) rotate(" + -rotation * 3 + "deg)";
   }
 }
-
-// Single window.onscroll event handler
-window.onscroll = function() {
-  toTopScrollFunction();
+window.addEventListener('scroll', function () {
   scrollRotate();
-};
+});
 
 // JavaScript to toggle the menu
 function toggleMenu() {
@@ -131,7 +122,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const target = this.getAttribute('data-target');
       const targetSection = document.getElementById(target) || document.querySelector('.' + target);
       targetSection.classList.add('visible');
-
       if (!targetSection.querySelector('.connection-line')) {
         const line = document.createElement('div');
         line.className = 'connection-line';
@@ -140,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
         line.style.left = this.offsetLeft + (this.offsetWidth / 2) + 'px';
         line.style.width = '2px';
         line.style.height = (targetSection.offsetTop - this.offsetTop - this.offsetHeight) + 'px';
-        line.style.backgroundColor = 'var(--color-accent-gold)';
+        line.style.backgroundColor = 'var(--color-gold)';
         document.body.appendChild(line);
       }
     });
@@ -156,139 +146,57 @@ function revealNumber(event, element) {
   }
 }
 
+
 // To Top arrow
 (function() {
-  var css = `
-      #toTopBtn {
-          position: fixed;
-          bottom: 20px;
-          right: 30px;
-          z-index: 99;
-          font-size: 22px;
-          font-weight: bold;
-          border: none;
-          outline: none;
-          background-color: rgba(0, 0, 0, 0.5);
-          color: var(--color-accent-gold);
-          cursor: pointer;
-          padding: 5px 12px 5px 12px;
-          border-radius: 10px;
-          display: none;
-          border: var(--color-accent-gold) solid 1px;
-      }
-      #toTopBtn:hover {
-          background-color: rgba(0, 0, 0, 0.8);
-      }
-  `;
-
-
-  var styleSheet = document.createElement("style");
-  styleSheet.type = "text/css";
-  styleSheet.innerText = css;
-  document.head.appendChild(styleSheet);
-
   var button = document.createElement("button");
   button.id = "toTopBtn";
   button.title = "Go to top";
-  button.innerHTML = "↑";
+  button.innerHTML = `
+  <svg height="30px" width="30px" viewBox="0 0 330 330">
+        <path d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+            l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+            C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+    </svg>
+`;
   document.body.appendChild(button);
 
   button.onclick = function() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
   };
+})();
+
+
+// Define toTopScrollFunction outside the IIFE
+function toTopScrollFunction() {
+  var button = document.getElementById("toTopBtn");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    button.style.display = "inline-block"; // Show the button
+    } else {
+        button.style.display = "none"; // Hide the button
+    }
+}
+
+// Single window.onscroll event handler
+window.addEventListener('scroll', function() {
+  toTopScrollFunction();
 });
 
 
-// Login page section
-document.addEventListener("DOMContentLoaded", function () {
-  var loginForm = document.getElementById("loginForm");
-  var createAccount = document.getElementById("createAccount");
-});
-// Event listener for the login form
-loginForm.addEventListener("submit", function (e) {
-  e.preventDefault();
+// Light & Dark theme
+let btn = document.querySelector(".darkmode");
 
-  var username = loginForm.elements["username"].value;
-  var password = loginForm.elements["password"].value;
-
-  fetch('/login', {
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-          username: username,
-          password: password
-      })
-  })
-      .then(response => response.json())
-      .then(data => {
-          // Handle response here
-          console.log(data);
-          if (data.success) {
-              // Redirect or update UI on successful login
-              window.location.href = 'static/test.html'; // Example redirection
-          } else {
-              // Show error message
-              alert("Login failed: " + data.message);
-          }
-      })
-      .catch(error => {
-          console.error('Error:', error);
-      });
-});
-
-// Event listener for the sign-up form
-createAccount.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  var formData = new FormData(createAccount);
-  var object = {};
-  formData.forEach(function (value, key) {
-      object[key] = value;
-  });
-  var json = JSON.stringify(object);
-
-  fetch('/signup', {
-      method: 'POST',
-      headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-      },
-      body: json
-  })
-      .then(response => response.json())
-      .then(data => {
-          console.log(data);
-          if (data.success) {
-              window.location.href = 'static/test.html';
-          } else {
-              alert("Sign up failed: " + data.message);
-          }
-      })
-      .catch(error => {
-          console.error('Error:', error);
-      });
-});
-
-
-// Corrected event listener for showing/hiding the signup form
-document.getElementById("linkCreateAccount").addEventListener("click", function (e) {
-  e.preventDefault();
-  var loginForm = document.getElementById("loginForm");
-  var createAccount = document.getElementById("createAccount");
-
-  loginForm.classList.add("form--hidden");
-  createAccount.classList.remove("form--hidden");
-});
-
-// Event listener for showing/hiding the login form
-document.getElementById("linkLogin").addEventListener("click", function (e) {
-  e.preventDefault();
-  var loginForm = document.getElementById("loginForm");
-  var createAccount = document.getElementById("createAccount");
-
-  loginForm.classList.remove("form--hidden");
-  createAccount.classList.add("form--hidden");
+btn.addEventListener("click", () => {
+  if (btn.innerHTML === `<i class="fas fa-moon"></i>`) {
+    btn.innerHTML = `<i class="fas fa-sun"></i>`;
+    btn.style.color = "orange";
+    btn.style.backgroundColor = "rgb(43, 43, 43)";
+    document.body.classList.add("darkmode");
+  } else {
+    btn.innerHTML = `<i class="fas fa-moon"></i>`;
+    btn.style.color = "black";
+    btn.style.backgroundColor = "white";
+    document.body.classList.remove("darkmode");
+  }
 });

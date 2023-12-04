@@ -117,6 +117,15 @@
     </script>
 
     <script src="home.js"></script>
+    <script>
+        // Reveal phone number
+        function revealNumber(event, element) {
+            if (!element.classList.contains('revealed')) {
+                event.preventDefault();
+                element.classList.add('revealed');
+            }
+        }
+    </script>
 </body>
 
 </html>

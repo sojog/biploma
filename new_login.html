@@ -2,17 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="blockchain, diploma, certificate, technology, verified, certiblock" />
-    <title>Services</title>
-    <link href="home.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="new_login.css">
+    <title>Login Page</title>
 </head>
 
 <body>
-
     <!-- Navbar section -->
     <header class="unique-navbar">
         <div class="brand-logo">
@@ -31,27 +28,62 @@
                 <li><a href="services.html">SERVICES</a></li>
                 <li><a href="about_us.html">ABOUT</a></li>
                 <li><a href="contact_us.html">CONTACT</a></li>
-                <li><a href="new_login.html" class="button-nav">LOGIN</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- First Section On Screen-->
-    <section class="general-container">
-        <div class="container">
-            <div class="column">
-                <h1>Services</h1>
-                <h3>Decentralized Verification</h3>
-                <p>Employers can verify diplomas without relying on a central authority.
-                </p>
-                <h3>Enhanced Security</h3>
-                <p>All data on the blockchain is encrypted ensuring maximum security.</p>
-                <h3>Integration Capabilities</h3>
-                <p>APIs available for institutions to integrate with their existing systems.
-                </p>
+    <div class="main-container">
+        <div class="frame" id="frame-container">
+            <div class="form-container sign-up">
+                <form>
+                    <h1>Create Account</h1>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <!-- <button>Sign Up</button> -->
+                    <a href="#" class="button-3">SIGN UP</a>
+                </form>
+            </div>
+            <div class="form-container sign-in">
+                <form>
+                    <h1>Sign In</h1>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email</span>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a href="#">Forgot Password?</a>
+                    <!-- <button>Sign In</button> -->
+                    <a href="#" class="button-3">SIGN IN</a>
+                </form>
+            </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Welcome Back!</h1>
+                        <p>Already have an account with us?</p>
+                        <button class="hidden" id="login">SIGN IN</button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>Hi there!</h1>
+                        <p>Sign up now to join our amazing community.</p>
+                        <button class="hidden" id="register">SIGN UP</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer section -->
     <footer class="footer">
@@ -100,9 +132,8 @@
         </div>
     </footer>
 
-    <!-- Script section -->
-    <script src="home.js"></script>
 
+    <script src="new_login_script.js"></script>
 </body>
 
 </html>

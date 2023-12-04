@@ -5,37 +5,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="blockchain, diploma, certificate, technology, verified, certiblock" />
-    <title>About Us</title>
     <link href="home.css" type="text/css" rel="stylesheet" />
+    <title>About Us</title>
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
-
     <!-- Navbar section -->
-    <div id="navbar-placeholder"></div>
+    <header class="unique-navbar">
+        <div class="brand-logo">
+            <a href="home.html"><img src="images/logo_yellow.png" alt="Certiblock Logo" class="navbar-logo" /></a>
+            <a href="home.html" class="brand-link">CΞRTIBLOCK<span id="tm-symbol">™</span></a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="menu-line line1"></div>
+            <div class="menu-line line2"></div>
+            <div class="menu-line line3"></div>
+        </div>
+        <nav>
+            <ul class="navbar-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="about_us.html">ABOUT</a></li>
+                <li><a href="contact_us.html">CONTACT</a></li>
+                <li><a href="new_login.html" class="button-nav">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
     <!-- First Section On Screen-->
-    <section class="top-container">
+    <section class="general-container">
         <div class="container">
             <div class="column">
                 <br>
-                <br>
                 <h1>Who we are?</h1>
-                <br>
                 <p>Your digital alchemists.</p>
                 <p>Transforming the ordinary into the extraordinary.</p>
                 <p>Innovative. Secure. Revolutionary.</p>
                 <p>We are the encrypted messages in a world of open letters.</p>
-                <p>The digital seal on your most prized documents. The guardians of authenticity in a world of replicas.
+                <p>The digital seal on your most prized documents. The guardians of authenticity in a world of
+                    replicas.
                 </p>
                 <p>The master key in a labyrinth of locks. They don't do that. So what?</p>
                 <br>
                 <br>
                 <h1>What we do?</h1>
-                <br>
                 <p>Craft unbreakable chains of trust for you.</p>
                 <p>Fort Knox-Level Security</p>
                 <p>We turn complex codes into simple solutions. And simple solutions into digital fortresses.</p>
@@ -46,9 +63,9 @@
                 <br>
                 <br>
                 <h1>How we do it?</h1>
-                <br>
                 <p>We weave magic with ones and zeros.</p>
-                <p>Our blockchain wizards conjure cryptographic magic, making every certification a unique stronghold.
+                <p>Our blockchain wizards conjure cryptographic magic, making every certification a unique
+                    stronghold.
                 </p>
                 <p>In our digital symphony, each byte sings, each block resonates, crafting secure, trust-tuned
                     solutions.</p>
@@ -60,22 +77,54 @@
     </section>
 
     <!-- Footer section -->
-    <div id="footer-placeholder"></div>
-
-    <!-- Script section -->
-    <script>
-        // Fetch and load the footer
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(text => document.getElementById('footer-placeholder').innerHTML = text);
-
-        // Fetch and load the navbar
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(text => document.getElementById('navbar-placeholder').innerHTML = text);
-    </script>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="service.html">our services</a></li>
+                        <li><a href="terms.html">terms and conditions</a></li>
+                        <li><a href="privacy_policy.html">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="theme_mode_2.html">dark theme</a></li>
+                        <li><a href="#">login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>pricing</h4>
+                    <ul>
+                        <li><a href="#">for institutions</a></li>
+                        <li><a href="#">for individuals</a></li>
+                        <li><a href="#">for employers</a></li>
+                        <li><a href="#">guarantees</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-footer">
+            ©2023 CΞRTIBLOCK<span id="tm-symbol">™</span>. All rights reserved.
+        </div>
+    </footer>
 
     <script src="home.js"></script>
+
 </body>
 
 </html>
