@@ -7,6 +7,7 @@
     <meta name="keywords" content="blockchain, diploma, certificate, technology, verified, certiblock" />
     <title>Products</title>
     <link href="home.css" type="text/css" rel="stylesheet" />
+    <link href="iphone.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -16,29 +17,118 @@
 <body>
 
     <!-- Navbar section -->
-    <header class="unique-navbar">
-        <div class="brand-logo">
-            <a href="home.html"><img src="images/logo_yellow.png" alt="Certiblock Logo" class="navbar-logo" /></a>
-            <a href="home.html" class="brand-link">CΞRTIBLOCK<span id="tm-symbol">™</span></a>
-        </div>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="menu-line line1"></div>
-            <div class="menu-line line2"></div>
-            <div class="menu-line line3"></div>
-        </div>
-        <nav>
+    <header>
+        <nav class="unique-navbar">
+            <div class="brand-logo">
+                <a href="home.html"><img src="images/logo.png" alt="Certiblock Logo" class="navbar-logo" /></a>
+                <a href="home.html" class="brand-link">CΞRTIBLOCK<span id="tm-symbol">™</span></a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="menu-line line1"></div>
+                <div class="menu-line line2"></div>
+                <div class="menu-line line3"></div>
+            </div>
+
             <ul class="navbar-links">
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="products.html">PRODUCTS</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="about_us.html">ABOUT</a></li>
-                <li><a href="contact_us.html">CONTACT</a></li>
+                <li id="link1" class="link"><a href="home.html">HOME</a></li>
+                <li id="link2" class="link"><a href="products.html">PRODUCTS</a></li>
+                <li id="link3" class="link"><a href="services.html">SERVICES</a></li>
+                <li id="link4" class="link"><a href="about_us.html">ABOUT</a></li>
+                <li id="link5" class="link"><a href="contact_us.html">CONTACT</a></li>
                 <li><a href="new_login.html" class="button-nav">LOGIN</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- First Section On Screen-->
+    <header>
+        <h2>Experience the power of modern technology</h2>
+    </header>
+
+
+
+    <section class="iphone14">
+        <input type="radio" name="theme" id="deep-purple" checked="checked">
+        <input type="radio" name="theme" id="gold">
+        <input type="radio" name="theme" id="space-black">
+        <input type="radio" name="theme" id="silver">
+
+        <div class="phone">
+            <div class="buttons">
+                <div class="left">
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                </div>
+                <div class="right">
+                    <div class="button"></div>
+                </div>
+            </div>
+            <div class="camera"></div>
+            <div class="screen-container">
+                <div class="bg">
+                    <div class="deep-purple">
+                        <div class="section">
+                            <div class="glow"></div>
+                        </div>
+                        <div class="section">
+                            <div class="glow"></div>
+                        </div>
+                    </div>
+                    <div class="gold">
+                        <div class="section">
+                            <div class="glow"></div>
+                        </div>
+                        <div class="section">
+                            <div class="glow"></div>
+                        </div>
+                    </div>
+                    <div class="space-black">
+                        <div class="section">
+                            <div class="glow"></div>
+                        </div>
+                        <div class="section">
+                            <div class="glow"></div>
+                        </div>
+                    </div>
+                    <div class="silver">
+                        <div class="section">
+                            <div class="glow"></div>
+                        </div>
+                        <div class="section">
+                            <div class="glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notch-container" tabindex="0">
+                <div class="notch">
+                    <div class="content">
+                        <div class="left">
+                            <div class="title"></div>
+                            <div class="text"></div>
+                        </div>
+                        <div class="right">
+                            <div class="bar">
+                                <div class="duration"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="notch-blur"></div>
+            </div>
+        </div>
+        <div class="palette">
+            <label for="deep-purple" class="swatch"></label>
+            <label for="gold" class="swatch"></label>
+            <label for="space-black" class="swatch"></label>
+            <label for="silver" class="swatch"></label>
+        </div>
+    </section>
+
+
+
     <section class="general-container">
         <div class="container">
             <h1>Certiblock™</h1>
@@ -170,8 +260,8 @@
                     </article>
                 </div>
             </div>
-
     </section>
+
 
 
     <!-- Individuals Section -->

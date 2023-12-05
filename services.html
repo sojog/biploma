@@ -14,44 +14,72 @@
 <body>
 
     <!-- Navbar section -->
-    <header class="unique-navbar">
-        <div class="brand-logo">
-            <a href="home.html"><img src="images/logo_yellow.png" alt="Certiblock Logo" class="navbar-logo" /></a>
-            <a href="home.html" class="brand-link">CΞRTIBLOCK<span id="tm-symbol">™</span></a>
-        </div>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="menu-line line1"></div>
-            <div class="menu-line line2"></div>
-            <div class="menu-line line3"></div>
-        </div>
-        <nav>
+    <header>
+        <nav class="unique-navbar">
+            <div class="brand-logo">
+                <a href="home.html"><img src="images/logo.png" alt="Certiblock Logo" class="navbar-logo" /></a>
+                <a href="home.html" class="brand-link">CΞRTIBLOCK<span id="tm-symbol">™</span></a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="menu-line line1"></div>
+                <div class="menu-line line2"></div>
+                <div class="menu-line line3"></div>
+            </div>
+
             <ul class="navbar-links">
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="products.html">PRODUCTS</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="about_us.html">ABOUT</a></li>
-                <li><a href="contact_us.html">CONTACT</a></li>
+                <li id="link1" class="link"><a href="home.html">HOME</a></li>
+                <li id="link2" class="link"><a href="products.html">PRODUCTS</a></li>
+                <li id="link3" class="link"><a href="services.html">SERVICES</a></li>
+                <li id="link4" class="link"><a href="about_us.html">ABOUT</a></li>
+                <li id="link5" class="link"><a href="contact_us.html">CONTACT</a></li>
                 <li><a href="new_login.html" class="button-nav">LOGIN</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- First Section On Screen-->
-    <section class="general-container">
-        <div class="container">
-            <div class="column">
-                <h1>Services</h1>
-                <h3>Decentralized Verification</h3>
-                <p>Employers can verify diplomas without relying on a central authority.
-                </p>
-                <h3>Enhanced Security</h3>
-                <p>All data on the blockchain is encrypted ensuring maximum security.</p>
-                <h3>Integration Capabilities</h3>
-                <p>APIs available for institutions to integrate with their existing systems.
-                </p>
+
+    <main class="main flow">
+        <h1 class="main__heading">Pricing</h1>
+        <div class="main__cards cards">
+            <div class="cards__inner">
+
+                <div class="cards__card card">
+                    <h2 class="card__heading">Basic</h2>
+                    <p class="card__price">$9.99</p>
+                    <ul role="list" class="card__bullets flow">
+                        <li>Access to standard workouts and nutrition plans</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="#basic" class="card__cta cta">Get Started</a>
+                </div>
+
+                <div class="cards__card card">
+                    <h2 class="card__heading">Pro</h2>
+                    <p class="card__price">$19.99</p>
+                    <ul role="list" class="card__bullets flow">
+                        <li>Access to advanced workouts and nutrition plans</li>
+                        <li>Priority Email support</li>
+                        <li>Exclusive access to live Q&A sessions</li>
+                    </ul>
+                    <a href="#pro" class="card__cta cta">Upgrade to Pro</a>
+                </div>
+
+                <div class="cards__card card">
+                    <h2 class="card__heading">Corporate</h2>
+                    <p class="card__price">$29.99</p>
+                    <ul role="list" class="card__bullets flow">
+                        <li>Access to all premium workouts and nutrition plans</li>
+                        <li>24/7 Priority support</li>
+                        <li>1-on-1 virtual coaching session every month</li>
+                        <li>Exclusive content and early access to new features</li>
+                    </ul>
+                    <a href="#ultimate" class="card__cta cta">Go Corporate</a>
+                </div>
             </div>
+            <div class="overlay cards__inner"></div>
         </div>
-    </section>
+    </main>
 
     <!-- Footer section -->
     <footer class="footer">
@@ -102,6 +130,7 @@
 
     <!-- Script section -->
     <script src="home.js"></script>
+    <script src="price.js"></script>
 
 </body>
 

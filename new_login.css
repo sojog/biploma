@@ -186,7 +186,7 @@ body {
     overflow: hidden;
     transition: all 0.6s ease-in-out;
     border-radius: 150px 0 0 100px;
-    z-index: 999;
+    z-index: 10;
 }
 
 .frame.active .toggle-container {
