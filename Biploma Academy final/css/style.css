@@ -1,0 +1,377 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #F0FBFC;
+}
+#gif-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%)scale(1.5);
+    transition: transform 0.2s ease-in-out;
+    
+    }
+    .gif-roti {
+        position: absolute;
+        top:20px;
+        right: 20px;
+        margin: 10px; /* Adjust the margin as needed */
+        transform: scale(4); /* Ajustează factorul de scalare pentru a mări elementul */
+        z-index: 1001; /* Asigură că GIF-ul este peste navbar */
+    
+    }
+
+    
+    
+
+.top-bar {
+    background-color: #181d38;
+    color: #F0FBFC;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 999;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo-container img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.gif-container {
+    height: 40px;
+    margin-left: 10px;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Aliniază elementele în centrul axei verticale */
+    max-width: 100%;
+    width: calc(100% - 40px); /* Ajustează lățimea totală a meniului */
+}
+
+.navbar {
+    background-color: #181d38;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 998; /* Setează un z-index pentru .navbar */
+}
+
+
+.nav-item {
+    margin-right: 15px;
+   
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #F0FBFC;
+    font-weight: bold;
+    transition: color 0.3s ease;
+        padding: 10px; /* Schimbați dimensiunea dorită a fiecărui element de meniu */
+        font-size: 30px;/* Schimbați dimensiunea fontului pentru meniu */
+}
+
+.nav-link:hover {
+    color: #06BBCC;
+}
+
+.vanta-canva{
+    width: 100%;
+    height: 100vh;
+
+    }
+
+
+.space-between {
+    margin-top: 20px;
+}
+
+.custom-social-btn {
+    background-color: #3b5998;
+    border-color: #3b5998;
+    color: #fff;
+}
+
+.custom-social-btn:hover {
+    background-color: #314e75;
+}
+
+.footer-menu {
+    margin-top: 20px;
+
+
+}
+
+
+
+.footer {
+    background-color: #181d38;
+    color: #ffffff;
+    padding-top: 3rem;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.footer-menu a {
+    color: #F0FBFC;
+    text-decoration: none;
+
+  
+}
+
+.footer-menu a:hover {
+    color: #06BBCC;
+}
+
+
+.btn-carousel {
+    background-color: #0069d9; /* culoare de fundal a butonului */
+    color: #fff; /* culoare textului butonului */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-carousel:hover {
+    background-color: #0056b3; /* culoare de fundal a butonului la hover */
+}
+
+/* Adăugați animația pentru explozie */
+@keyframes explode {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  /* Stiluri pentru butonul de explozie */
+  .button-explode {
+    animation: explode 0.5s ease-in-out;
+    transform-origin: center center;
+    position: relative;
+    overflow: hidden;
+  }
+
+#elevatorBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#elevatorBtn:hover {
+    background-color: #0056b3;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label,
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #314e75;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cursuri-section {
+    padding: 50px 0;
+}
+
+.curs {
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.curs:hover {
+    transform: scale(1.05);
+}
+
+.curs img {
+    max-width: 200px;
+    height: auto;
+}
+
+.detalii-curs {
+    padding: 20px;
+    text-align: left;
+}
+
+
+.testimonials {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.testimonial-content {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonial-author p {
+  font-weight: bold;
+}
+
+
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+form {
+    position: relative;
+    z-index: 1001;}
+
+    .top-bar {
+        z-index: 1001; /* Ensure the top bar is above the video background */
+    }
+    
+    .navbar {
+        z-index: 1000; /* Ensure the navbar is above the video background */
+    }
+    
+    .footer {
+        z-index: 1001; /* Ensure the footer is above the video background */
+    }
+    
+    .container-wrapper {
+        position: relative;
+        z-index: 1001; /* Set a higher z-index for the container to be above the video background */
+    }
+    .top-bar, .navbar, form, .footer {
+        position: relative;
+        z-index: 1002; /* Set a z-index for these elements to be above the video background */
+    }
+
+    .email-label {
+        color: #ffffff; /* Schimbați culoarea după preferințe; aici, #00ff00 este verde */
+    }
+    
+    .message-label {
+        color: #ffffff; /* Schimbați culoarea după preferințe; aici, #0000ff este albastru */
+    }
+
+    .name-label {
+        color: #ffffff; /* Schimbați culoarea după preferințe; aici, #ff9900 este portocaliu */
+    }
+
+@media screen and (max-width: 767px) {
+  .top-bar {
+      padding: 5px;
+  }
+
+  .nav-item {
+      margin-right: 5px;
+  }
+
+  .curs {
+      margin: 10px 0; /* Spațiu mai mic între cursuri pe ecrane mici */
+  }
+
+  .detalii-curs {
+      padding: 10px;
+  }
+
+  /* ... alte modificări pentru ecrane mici ... */
+}
+
+/* Stiluri pentru ecrane mari (de exemplu, desktop-uri) */
+@media screen and (min-width: 768px) {
+  .top-bar {
+      padding: 15px;
+  }
+}
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menține aspectul video și acoperă întreaga zonă */
+    z-index: -1;
+}
+
+/* Fundal colorat sub videoclip pentru ecranele mici */
+@media screen and (max-width: 767px) {
+    #video-background {
+        min-height: 100%; /* Afișează întregul videoclip, chiar dacă nu acoperă întreaga înălțime */
+    }}

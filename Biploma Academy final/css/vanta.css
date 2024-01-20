@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #F0FBFC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+            flex-direction: column; 
+}
+
+
+#vanta-canva {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.clickable-container {
+    text-align: center; /* Asează imaginea și textul în centru */
+    cursor: pointer;}
+
+#clickable-text {
+        font-size: 40px; /* Mărimea textului */
+        color: white; /* Culoarea textului */
+    }

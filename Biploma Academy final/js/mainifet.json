@@ -1,0 +1,10 @@
+if (typeof rive !== 'undefined') {
+    const riveCanvas = document.getElementById('riveCanvas');
+    const riveAnimation = new rive.Rive({
+        src: './robo.riv',
+        canvas: riveCanvas,
+        autoplay: true,
+    });
+} else {
+    console.error('Rive library not loaded');
+}
